@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyStats : MonoBehaviour
 {
     public int maxHp, hp, atk;
-    public float speed, atkSpeed, CD;
+    public float AtkRange, sight, speed, atkSpeed, CD;
     
     private void Start()
     {
@@ -14,12 +14,7 @@ public class EnemyStats : MonoBehaviour
 
     private void Update()
     {
-        Death();
+
     }
 
-    void Death()
-    {
-        if(hp <= 0)
-            Destroy(this.gameObject);
-    }
 }
