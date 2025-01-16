@@ -10,6 +10,7 @@ public class WeaponController : MonoBehaviour
     private float angle, countdown;
     
     [SerializeField] private PlayerController player;
+    [SerializeField] private WeaponStats stats;
     public Animator anim;
     
     private Vector3 movement;
@@ -17,6 +18,7 @@ public class WeaponController : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+        stats = GameObject.FindWithTag("Weapon").GetComponent<WeaponStats>();
     }
 
     private void Update()
@@ -64,7 +66,7 @@ public class WeaponController : MonoBehaviour
     private void AttackAnimOff()
     {
         anim.SetBool("Attack", false);
-        countdown = 1 / player.GetComponent<Stats>().atkSpeed;
+        countdown = 1 / stats.atkSpeed;
     }
 
     private void Despawn()

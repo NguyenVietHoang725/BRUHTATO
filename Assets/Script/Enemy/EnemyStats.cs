@@ -4,22 +4,19 @@ using UnityEngine;
 
 public class EnemyStats : MonoBehaviour
 {
-    public int maxHp, hp, atk;
-    public float speed, atkSpeed, CD;
+    public int maxHp, hp, atk, level;
+    public float AtkRange, sight, speed;
     
     private void Start()
     {
+        maxHp *= level;
+        atk *= level;
         hp = maxHp;
     }
 
     private void Update()
     {
-        Death();
+
     }
 
-    void Death()
-    {
-        if(hp <= 0)
-            Destroy(this.gameObject);
-    }
 }

@@ -9,17 +9,19 @@ public class PlayerController : MonoBehaviour
 {
     public Stats stats;
 
-    [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private Animator anim;
+    private Rigidbody2D rb;
+    private Animator anim;
     public CinemachineVirtualCamera vcam;
     
-    protected Vector3 movement;
+    private Vector3 movement;
     private bool flip = true;
 
     private void Start()
     {
         vcam = GameObject.FindGameObjectWithTag("Vcam").GetComponent<CinemachineVirtualCamera>();
         vcam.Follow = this.transform;
+        rb = this.GetComponent<Rigidbody2D>();
+        anim = this.GetComponent<Animator>();
     }
 
     private void Update()
@@ -38,7 +40,7 @@ public class PlayerController : MonoBehaviour
 
         rb.velocity = new Vector2(movement.x, movement.y) * stats.speed;
         
-        anim.SetFloat("Speed", Mathf.Abs(movement.x));
+        anim.SetFloat("Speed", rb.velocity.magnitude);
         
         if(movement.x != 0) rb.AddForce(new Vector2(movement.x * stats.speed, 0));
         if(movement.x > 0 && !flip) Flip();
