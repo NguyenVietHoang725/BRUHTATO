@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dcdd7066a4d58774482f56c4db7e2b78
+guid: b02627d6900785b45aa9cb68d65c35cd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,841 +97,715 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Carrot-sheet_0
+      name: Orc_0
       rect:
         serializedVersion: 2
         x: 0
         y: 320
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9d659d57a8057747a7ccfd27dfdb17b
-      internalID: -437116843
+      spriteID: 8a0287e6fb278c8478db6f8bcf8a825e
+      internalID: 1854266016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_1
+      name: Orc_1
       rect:
         serializedVersion: 2
         x: 64
         y: 320
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 811750ecdeb94c0479084e1795834b52
-      internalID: -907088297
+      spriteID: 3bff8d0007afde94f955b037f4b38d92
+      internalID: -1855871973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_2
+      name: Orc_2
       rect:
         serializedVersion: 2
         x: 128
         y: 320
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf5debcd1792763499698d825606092f
-      internalID: 304177125
+      spriteID: fdcc239f84f1580448bed2395119a082
+      internalID: 741697930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_3
+      name: Orc_3
       rect:
         serializedVersion: 2
         x: 192
         y: 320
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 090cb23fb60c1e1419d6d237ba2970ce
-      internalID: -1027978563
+      spriteID: f9822ce0ec8afe84791c52708fbbbda8
+      internalID: -1490990290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_4
+      name: Orc_4
       rect:
         serializedVersion: 2
         x: 256
         y: 320
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e36a01f0636e4b5429e42233e9bd9b6e
-      internalID: 1438263236
+      spriteID: cf921871d9f5cf04ea2c1ec6d815be40
+      internalID: -112052326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_5
+      name: Orc_5
       rect:
         serializedVersion: 2
         x: 320
         y: 320
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 895b619f8b81a2044b93cc0561fb8fbe
-      internalID: 1680375602
+      spriteID: 8d19b4989f6e39244868a16fa7eafa61
+      internalID: 1696540559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 320
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: caff7c54375023f4cb40d9fd4d6fac09
-      internalID: 1650759655
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carrot-sheet_7
+      name: Orc_6
       rect:
         serializedVersion: 2
         x: 0
         y: 256
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c5a51b02788f61408ef88f1133e69ab
-      internalID: 785669414
+      spriteID: 7f729366fac13cd43a32d0f950b13a30
+      internalID: 2081511694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_8
+      name: Orc_7
       rect:
         serializedVersion: 2
         x: 64
         y: 256
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 151a9719e9fe9e6468d2538bb0c36058
-      internalID: -984578266
+      spriteID: 6905007959f132447bf4e3e12561c9e7
+      internalID: -1728261622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_9
+      name: Orc_8
       rect:
         serializedVersion: 2
         x: 128
         y: 256
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e7a0e0545f868b488824871564caa01
-      internalID: 1606763811
+      spriteID: 077898a06c44db34aaa2c1280854bc0f
+      internalID: 587898820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_10
+      name: Orc_9
       rect:
         serializedVersion: 2
         x: 192
         y: 256
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acbbaa12e4a8d544680c9992d3cb9c6a
-      internalID: 602925167
+      spriteID: 46ef5a6d743f71843b35469b38b29749
+      internalID: -2095914825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_11
+      name: Orc_10
       rect:
         serializedVersion: 2
         x: 256
         y: 256
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3568be4b0e9e7b54faccbe8619316b4c
-      internalID: -1212038683
+      spriteID: f27b7a0daf055114c8b4f61f4eee1853
+      internalID: 1702105553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_12
+      name: Orc_11
       rect:
         serializedVersion: 2
         x: 320
         y: 256
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb4528374a4cb534f8c65c12d6623aa8
-      internalID: -1925545930
+      spriteID: bc7a345df0c49fe4f9e6da612a6496b6
+      internalID: 1684993521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_13
+      name: Orc_12
       rect:
         serializedVersion: 2
         x: 384
         y: 256
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bb1ad9e8f7237d4d88d9acee9ad60e2
-      internalID: 493724345
+      spriteID: eccff08c9fe177d4299cb7248eb41466
+      internalID: 1688220533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_14
+      name: Orc_13
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f388a387b38b3448f42c52e13a3a16
+      internalID: -604099797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc_14
       rect:
         serializedVersion: 2
         x: 0
         y: 192
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4293140802cce3546a85a510a30a77b1
-      internalID: 1122203360
+      spriteID: 90be5d36a88e72b49a97131c0271be7b
+      internalID: 1915396018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_15
+      name: Orc_15
       rect:
         serializedVersion: 2
         x: 64
         y: 192
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 193ea437e2c8e6c468ab757145b7d0a5
-      internalID: 35016137
+      spriteID: 619bf0884ac9bb248ac072607c7bac26
+      internalID: -1516626219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_16
+      name: Orc_16
       rect:
         serializedVersion: 2
         x: 128
         y: 192
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad0609b056d51264db19a71f42fcd975
-      internalID: 1821498010
+      spriteID: c9c72aa91ae5585409c8a6466cf7dac5
+      internalID: -1234291741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_17
+      name: Orc_17
       rect:
         serializedVersion: 2
         x: 192
         y: 192
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 947a5e42a3dc5c04d9d7fb2ba900d43f
-      internalID: -714588708
+      spriteID: da1f4d2b1d75ace48b9e9f01974d23f7
+      internalID: -1083970439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_18
+      name: Orc_18
       rect:
         serializedVersion: 2
         x: 256
         y: 192
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 871c341466365b846b9b4fbe1b1bbe74
-      internalID: -135304927
+      spriteID: bb34d8fe09fdbd942918ed8c9db194fa
+      internalID: -1662276700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_19
+      name: Orc_19
       rect:
         serializedVersion: 2
         x: 320
         y: 192
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1af67df716fe1cb44a4e44c640da294b
-      internalID: -487774564
+      spriteID: 603c7ff612dc91448b7c671c46b75aea
+      internalID: 2134798651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_20
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 192
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65d178f80aaf4274e8418407a509bb43
-      internalID: -2086558190
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carrot-sheet_21
+      name: Orc_20
       rect:
         serializedVersion: 2
         x: 0
         y: 128
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a595bf6559f7efe4bbae5033274e6d66
-      internalID: -1089451118
+      spriteID: 5f22c9fe9895cd64aae0248588d5d43f
+      internalID: 1929294210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_22
+      name: Orc_21
       rect:
         serializedVersion: 2
         x: 64
         y: 128
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 523593d400bc0674e8a24e6e1de4e209
-      internalID: 2116443606
+      spriteID: 8a0aaa22c45d2a94781e24728d5f07df
+      internalID: 220802703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_23
+      name: Orc_22
       rect:
         serializedVersion: 2
         x: 128
         y: 128
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a5ac87b006c80044b2fa7c303c66de5
-      internalID: -1731841740
+      spriteID: c040e9e06a2ab43408b27edf1cf3e0b2
+      internalID: 412909835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_24
+      name: Orc_23
       rect:
         serializedVersion: 2
         x: 192
         y: 128
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2352e787659a3a43a2f1ff23436d696
-      internalID: 717518028
+      spriteID: e3b75d43b7e02e548bb9521aa80ca4f8
+      internalID: 852362887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_25
+      name: Orc_24
       rect:
         serializedVersion: 2
         x: 256
         y: 128
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f228ad808627ed14ab4e603665eb6740
-      internalID: -597751961
+      spriteID: e2061c4e33230ee448f0f722128b3bd6
+      internalID: -1910813888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_26
+      name: Orc_25
       rect:
         serializedVersion: 2
         x: 320
         y: 128
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1773e3de4884d404f9a6dcec010cb0fb
-      internalID: -1763256542
+      spriteID: 15b0c15dd8ea5554091e2d29aadc519f
+      internalID: -1754220566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_27
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 128
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20bbc3bf2c2aed046add7833e0b4eb5c
-      internalID: -1034787896
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carrot-sheet_28
+      name: Orc_26
       rect:
         serializedVersion: 2
         x: 0
         y: 64
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 403f055c892b4da49b81b16c2ed92cc2
-      internalID: -76634845
+      spriteID: 3dfe358b761a38d4e8607a943f8ebc77
+      internalID: 392115957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_29
+      name: Orc_27
       rect:
         serializedVersion: 2
         x: 64
         y: 64
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a581d98b4db242347b3f5be2070ab68d
-      internalID: 1883001621
+      spriteID: 06ba0b68ab77aca499a9830d259fc4e0
+      internalID: -1858290851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_30
+      name: Orc_28
       rect:
         serializedVersion: 2
         x: 128
         y: 64
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc9b0247ac44353489e39bf3c9795984
-      internalID: 7422930
+      spriteID: 5d10393541399c54bacfbc5e07f7d2e5
+      internalID: -368299566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_31
+      name: Orc_29
       rect:
         serializedVersion: 2
-        x: 193
+        x: 192
         y: 64
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb44e84497c16e64cad3ada9abb8c014
-      internalID: 1034794816
+      spriteID: 1510bc77cb53b4f43a1a7897f3b0be23
+      internalID: -847643639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_32
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 64
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a356e841fbaf4a84f985fd11395db482
-      internalID: 1044166125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carrot-sheet_33
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 64
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9a4fa37ee2797a4296b0756abf13885
-      internalID: -1516557729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carrot-sheet_34
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 64
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e15ff4abbf23484db1a5640623043ac
-      internalID: 419251356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carrot-sheet_35
+      name: Orc_30
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 552b401f7e37db54cac884ebfd1d145a
-      internalID: 1366170933
+      spriteID: b18037bfc33ea6b418328bd0799d7be1
+      internalID: -946463399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_36
+      name: Orc_31
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 133ca229e8be8514cb9654ba3cf0b404
-      internalID: 57654700
+      spriteID: c6f131c517df91447b1fbbe070eb0d20
+      internalID: 1416398081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_37
+      name: Orc_32
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f854149a76b15644864a2b53828d78b
-      internalID: 1395102310
+      spriteID: e7ed25588e4da5d4fa6fbc34ce5f0289
+      internalID: -496664151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carrot-sheet_38
+      name: Orc_33
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa620b4eec77acd4aa1f3a96da9ba10c
-      internalID: 1007452787
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carrot-sheet_39
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56aa493f0fade8d4aac20c051454bab6
-      internalID: 1547807498
+      spriteID: b6e4d6463f6824542b56ffc3f7095753
+      internalID: 1076213049
       vertices: []
       indices: 
       edges: []
@@ -947,46 +821,40 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Carrot-sheet_0: -437116843
-      Carrot-sheet_1: -907088297
-      Carrot-sheet_10: 602925167
-      Carrot-sheet_11: -1212038683
-      Carrot-sheet_12: -1925545930
-      Carrot-sheet_13: 493724345
-      Carrot-sheet_14: 1122203360
-      Carrot-sheet_15: 35016137
-      Carrot-sheet_16: 1821498010
-      Carrot-sheet_17: -714588708
-      Carrot-sheet_18: -135304927
-      Carrot-sheet_19: -487774564
-      Carrot-sheet_2: 304177125
-      Carrot-sheet_20: -2086558190
-      Carrot-sheet_21: -1089451118
-      Carrot-sheet_22: 2116443606
-      Carrot-sheet_23: -1731841740
-      Carrot-sheet_24: 717518028
-      Carrot-sheet_25: -597751961
-      Carrot-sheet_26: -1763256542
-      Carrot-sheet_27: -1034787896
-      Carrot-sheet_28: -76634845
-      Carrot-sheet_29: 1883001621
-      Carrot-sheet_3: -1027978563
-      Carrot-sheet_30: 7422930
-      Carrot-sheet_31: 1034794816
-      Carrot-sheet_32: 1044166125
-      Carrot-sheet_33: -1516557729
-      Carrot-sheet_34: 419251356
-      Carrot-sheet_35: 1366170933
-      Carrot-sheet_36: 57654700
-      Carrot-sheet_37: 1395102310
-      Carrot-sheet_38: 1007452787
-      Carrot-sheet_39: 1547807498
-      Carrot-sheet_4: 1438263236
-      Carrot-sheet_5: 1680375602
-      Carrot-sheet_6: 1650759655
-      Carrot-sheet_7: 785669414
-      Carrot-sheet_8: -984578266
-      Carrot-sheet_9: 1606763811
+      Orc_0: 1854266016
+      Orc_1: -1855871973
+      Orc_10: 1702105553
+      Orc_11: 1684993521
+      Orc_12: 1688220533
+      Orc_13: -604099797
+      Orc_14: 1915396018
+      Orc_15: -1516626219
+      Orc_16: -1234291741
+      Orc_17: -1083970439
+      Orc_18: -1662276700
+      Orc_19: 2134798651
+      Orc_2: 741697930
+      Orc_20: 1929294210
+      Orc_21: 220802703
+      Orc_22: 412909835
+      Orc_23: 852362887
+      Orc_24: -1910813888
+      Orc_25: -1754220566
+      Orc_26: 392115957
+      Orc_27: -1858290851
+      Orc_28: -368299566
+      Orc_29: -847643639
+      Orc_3: -1490990290
+      Orc_30: -946463399
+      Orc_31: 1416398081
+      Orc_32: -496664151
+      Orc_33: 1076213049
+      Orc_4: -112052326
+      Orc_5: 1696540559
+      Orc_6: 2081511694
+      Orc_7: -1728261622
+      Orc_8: 587898820
+      Orc_9: -2095914825
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

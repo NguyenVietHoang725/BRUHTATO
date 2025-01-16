@@ -7,9 +7,12 @@ public class EnemyMovement : MonoBehaviour
     private EnemyStats stats;
     private Transform target;
     private Rigidbody2D rb;
-    private Animator anim;
     private Vector3 movement;
     private bool flip = true;
+    public float counter;
+    
+    public Animator anim;
+    public float cooldown;
     
     // Start is called before the first frame update
     void Start()
@@ -18,17 +21,22 @@ public class EnemyMovement : MonoBehaviour
         rb = this.GetComponent<Rigidbody2D>();
         anim = this.GetComponent<Animator>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
+        counter = cooldown;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(counter > 0)
+            counter -= Time.deltaTime;;
+        
         if(stats.hp <= 0)
             Death();
-        else
-        {
-            Movement();
-        }
+        
+        Movement();
+        
+        if(counter <= 0)
+            Attack();
     }
 
     private void Movement()
@@ -39,15 +47,24 @@ public class EnemyMovement : MonoBehaviour
             movement.x = target.position.x - transform.position.x;
             movement.y = target.position.y - transform.position.y;
             transform.position = Vector3.MoveTowards(transform.position, target.position, stats.speed * Time.deltaTime);
+            anim.SetFloat("Speed", transform.position.magnitude);
         }
         else
         {
             anim.SetFloat("Speed", 0);
         }
 
-        anim.SetFloat("Speed", rb.velocity.magnitude);
         if(movement.x > 0 && !flip) Flip();
         if(movement.x < 0 && flip) Flip();
+    }
+
+    private void Attack()
+    {
+        if (Vector3.Distance(transform.position, target.position) <= stats.AtkRange)
+        {
+            movement = Vector3.zero;
+            anim.SetBool("IsAttack", true);
+        }
     }
 
     private void Flip()
@@ -57,6 +74,12 @@ public class EnemyMovement : MonoBehaviour
         transform.localScale = currentScale;
         
         flip = !flip;
+    }
+
+    private void AttackOff()
+    {
+        counter = cooldown;
+        anim.SetBool("IsAttack", false);
     }
     
     private void Death()
