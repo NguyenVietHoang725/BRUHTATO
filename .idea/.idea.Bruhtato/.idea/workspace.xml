@@ -6,15 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7ed137f6-678d-44bf-baa4-c2db03f637c1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Orc/Attack1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Orc/Attack1.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Sword/Slash.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Sword/Slash.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Bruhtato/Bruhtato.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Bruhtato/Bruhtato.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Karotto/Death.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Karotto/Death.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyDamage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/Dummy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/Dummy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/Orc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/Orc.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Weapon/Sword.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/Weapon/Sword.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/Stats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/Stats.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +107,10 @@
       <workItem from="1736997308953" duration="1545000" />
       <workItem from="1737510906157" duration="1226000" />
       <workItem from="1737512185388" duration="1446000" />
+      <workItem from="1737550408303" duration="283000" />
+      <workItem from="1737550748280" duration="51000" />
+      <workItem from="1737550820584" duration="69000" />
+      <workItem from="1737550907848" duration="1035000" />
     </task>
     <servers />
   </component>

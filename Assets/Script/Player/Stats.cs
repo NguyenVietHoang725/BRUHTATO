@@ -18,6 +18,10 @@ public class Stats : MonoBehaviour
 
     private void Update()
     {
-        
+        if(hp > maxHp) hp = maxHp;
+        if(mp > maxMp) mp = maxMp;
+        if(shield > maxShield) shield = maxShield;
+        if(mp < 0) mp = 0;
+        if(shield < 0) shield = 0;
     }
 }
