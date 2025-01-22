@@ -28,9 +28,7 @@ public class PlayerController : MonoBehaviour
     {
         Movement();
         if (stats.hp <= 0)
-        {
-            Death();
-        }
+            anim.SetBool("IsDead", true);
     }
 
     private void Movement()
@@ -58,7 +56,6 @@ public class PlayerController : MonoBehaviour
 
     private void Death()
     {
-        anim.SetBool("IsDead", true);
-        Destroy(this.gameObject, 0.5f);
+        this.gameObject.SetActive(false);
     }
 }

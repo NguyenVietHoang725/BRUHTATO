@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class EnemyStats : MonoBehaviour
 {
-    public int maxHp, hp, atk;
-    public float AtkRange, sight, speed, atkSpeed, CD;
+    public int maxHp, hp, atk, level;
+    public float AtkRange, sight, speed;
     
     private void Start()
     {
+        maxHp *= level;
+        atk *= level;
         hp = maxHp;
     }
 
