@@ -9,7 +9,7 @@ public class EnemyMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector3 movement;
     private bool flip = true;
-    public float counter;
+    private float counter;
     
     public Animator anim;
     public float cooldown;
@@ -27,15 +27,15 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(counter > 0)
-            counter -= Time.deltaTime;;
+        if(counter > 0) counter -= Time.deltaTime;
+        else counter = 0;
         
         if(stats.hp <= 0)
             Death();
         
         Movement();
         
-        if(counter <= 0)
+        if(counter == 0)
             Attack();
     }
 

@@ -193,7 +193,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a3b5993a5c90c4098d5f8de7988946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counter: 0
   anim: {fileID: 0}
   cooldown: 1
 --- !u!95 &1439554793618833322
@@ -234,7 +233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7060743530360772776
 Transform:
   m_ObjectHideFlags: 0
@@ -257,7 +256,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6008111730483216663}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:

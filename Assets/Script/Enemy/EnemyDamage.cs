@@ -11,18 +11,17 @@ public class EnemyDamage : MonoBehaviour
     void Start()
     {
         stats = GetComponentInParent<EnemyStats>();
+        damage = stats.atk;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (collider.gameObject.CompareTag("Player"))
         {
-            damage = stats.atk; 
-            
-            if(other.gameObject.GetComponent<Stats>().shield != 0)
-                other.gameObject.GetComponent<Stats>().shield -= damage;
+            if(collider.gameObject.GetComponent<Stats>().shield != 0)
+                collider.gameObject.GetComponent<Stats>().shield -= damage;
             else
-                other.gameObject.GetComponent<Stats>().hp -= damage;
+                collider.gameObject.GetComponent<Stats>().hp -= damage;
         }
     }
 }
