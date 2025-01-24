@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7ed137f6-678d-44bf-baa4-c2db03f637c1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/Orc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/Orc.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +112,7 @@
       <workItem from="1737556162298" duration="351000" />
       <workItem from="1737556791282" duration="408000" />
       <workItem from="1737557211637" duration="2256000" />
+      <workItem from="1737687268992" duration="2756000" />
     </task>
     <servers />
   </component>
