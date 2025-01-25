@@ -8,14 +8,16 @@ public class Bullet : MonoBehaviour
     public Transform spawnPoint;
     public GameObject bulletPrefab;
     public float speed;
+    [SerializeField] private WeaponStats stats;
     [SerializeField] private Stats playerStats;
     
     private float countdown;
 
     private void Start()
     {
+        stats = GameObject.FindGameObjectWithTag("Weapon").GetComponent<WeaponStats>();
         playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<Stats>();
-        countdown = 1 / playerStats.atkSpeed;
+        countdown = 1 / stats.atkSpeed;
     }
 
     private void Update()
@@ -35,6 +37,6 @@ public class Bullet : MonoBehaviour
         var bullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
         bullet.GetComponent<Rigidbody2D>().velocity = spawnPoint.right * speed;
         playerStats.mp -= this.GetComponent<WeaponStats>().mpConsume;
-        countdown = 1 / playerStats.atkSpeed;
+        countdown = 1 / stats.atkSpeed;
     }
 }
