@@ -14,7 +14,6 @@ public class PlayerController : MonoBehaviour
     public CinemachineVirtualCamera vcam;
     
     private Vector3 movement;
-    private bool flip = true;
 
     private void Start()
     {
@@ -41,17 +40,6 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("Speed", rb.velocity.magnitude);
         
         if(movement.x != 0) rb.AddForce(new Vector2(movement.x * stats.speed, 0));
-        if(movement.x > 0 && !flip) Flip();
-        if(movement.x < 0 && flip) Flip();
-    }
-
-    private void Flip()
-    {
-        Vector3 currentScale = gameObject.transform.localScale;
-        currentScale.x *= -1;
-        gameObject.transform.localScale = currentScale;
-
-        flip = !flip;
     }
 
     private void Death()

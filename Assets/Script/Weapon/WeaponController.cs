@@ -6,14 +6,16 @@ using ColorUtility = UnityEngine.ColorUtility;
 
 public class WeaponController : MonoBehaviour
 {
-    public float rotationSpeed;
-    private float angle, countdown;
+    private float countdown;
+    private bool flip = true;
     
     [SerializeField] private PlayerController player;
     [SerializeField] private WeaponStats stats;
     public Animator anim;
     
     private Vector3 movement;
+
+    public float angle;
 
     private void Start()
     {
@@ -26,7 +28,7 @@ public class WeaponController : MonoBehaviour
         if(countdown > 0) countdown -= Time.deltaTime;
         else countdown = 0;
         
-        Movement();
+        Rotation();
         
         if(player.stats.hp <= 0)
             Despawn();
@@ -34,23 +36,36 @@ public class WeaponController : MonoBehaviour
         AttackAnimation();
     }
 
-    private void Movement()
+    private void Rotation()
     {
-        movement.x = Input.GetAxis("Horizontal");
-        movement.y = Input.GetAxis("Vertical");
-        
-        Vector2 move = new Vector2(movement.x, movement.y);
-        move.Normalize();
-
         transform.position = player.transform.position;
-        if(movement.x > 0) transform.localScale = new Vector3(1, 1, 1);
-        else if(movement.x < 0) transform.localScale = new Vector3(1, -1, 1);
+        
+        Vector3 mousePosition = Input.mousePosition;
+        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+        
+        Vector2 direction = new Vector2(mousePosition.x - transform.position.x, mousePosition.y - transform.position.y);
+        
+        transform.right = direction;
+        
+        angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, angle);
 
-        if (move != Vector2.zero)
-        {
-            angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg * rotationSpeed;
-            transform.rotation = Quaternion.Euler(0, 0, angle);
-        }
+        if((angle < -90 || angle > 90) && flip) Flip();
+        if( angle > -90 && angle < 90 && !flip) Flip();
+    }
+
+    private void Flip()
+    {
+        Vector3 playerScale = player.transform.localScale;
+        Vector3 currentScale = transform.localScale;
+        
+        playerScale.x *= -1;
+        currentScale.y *= -1;
+        
+        transform.localScale = currentScale;
+        player.transform.localScale = playerScale;
+        
+        flip = !flip;
     }
 
     private void AttackAnimation()
