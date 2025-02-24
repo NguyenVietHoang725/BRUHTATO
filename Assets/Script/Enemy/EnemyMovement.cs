@@ -10,6 +10,7 @@ public class EnemyMovement : MonoBehaviour
     private Vector3 movement;
     private bool flip = true;
     private float counter;
+    [SerializeField] private GameObject ManaOrb;
     
     public Animator anim;
     public float cooldown;
@@ -29,9 +30,9 @@ public class EnemyMovement : MonoBehaviour
     {
         if(counter > 0) counter -= Time.deltaTime;
         else counter = 0;
-        
-        if(stats.hp <= 0)
-            Death();
+
+        if (stats.hp <= 0)
+            anim.SetBool("IsDead", true);
         
         Movement();
         
@@ -84,7 +85,7 @@ public class EnemyMovement : MonoBehaviour
     
     private void Death()
     {
-        anim.SetBool("IsDead", true);
+        var mpOrb = Instantiate(ManaOrb, this.transform.position, this.transform.rotation);
         Destroy(this.gameObject, 0.5f);
     }
 }

@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ed137f6-678d-44bf-baa4-c2db03f637c1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Character/Bruhtato.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/Character/Bruhtato.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Character/Karotto.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/Character/Karotto.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tileset/Sources/props.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tileset/Sources/props.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tileset/Sources/tileset - simplified transparent.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tileset/Sources/tileset - simplified transparent.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/Items/HealthBonusItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/Items/HealthBonusItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyMovement.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/Orc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/Orc.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +24,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemy/EnemyDamage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/System/ManaOrb.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -43,11 +48,18 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\death\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\death\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\death\\AppData\\Local\\Symbols\\src"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity\Unity Hub\2022.3.37f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.37f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;E:\Unity Project\Bruhtato&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\Unity Project\Bruhtato" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -55,7 +67,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity\Unity Hub\2022.3.37f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.37f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;E:\Unity Project\Bruhtato&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\Unity Project\Bruhtato" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -115,6 +127,7 @@
       <workItem from="1737557211637" duration="2256000" />
       <workItem from="1737687268992" duration="2756000" />
       <workItem from="1739724654240" duration="592000" />
+      <workItem from="1740372445821" duration="3294000" />
     </task>
     <servers />
   </component>
@@ -129,7 +142,6 @@
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
-    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>
