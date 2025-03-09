@@ -16,6 +16,9 @@ public class BarsController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(playerStats == null)
+            playerStats = GameObject.FindWithTag("Player").GetComponent<Stats>();
+        
         hpBar.fillAmount = Mathf.Clamp(1f * playerStats.hp / playerStats.maxHp, 0, 1);
         shieldBar.fillAmount = Mathf.Clamp(1f * playerStats.shield / playerStats.maxShield, 0, 1);
         mpBar.fillAmount = Mathf.Clamp(1f * playerStats.mp / playerStats.maxMp, 0, 1);

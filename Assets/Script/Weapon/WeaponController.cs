@@ -25,6 +25,9 @@ public class WeaponController : MonoBehaviour
 
     private void Update()
     {
+        if(!player)
+            player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+        
         if(countdown > 0) countdown -= Time.deltaTime;
         else countdown = 0;
         

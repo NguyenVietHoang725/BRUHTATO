@@ -31,6 +31,13 @@ namespace MoreMountains.InventoryEngine
 		protected virtual void Start()
 		{
 			MMGameEvent.Trigger("Load");
+			Debug.Log("Loaded");
+		}
+
+		protected virtual void OnApplicationQuit()
+		{
+			MMGameEvent.Trigger("Save");
+			Debug.Log("Saved");
 		}
 	}
 }

@@ -775,7 +775,7 @@ PlayerSettings:
   webGLTemplate: APPLICATION:Default
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
-  webGLCompressionFormat: 0
+  webGLCompressionFormat: 2
   webGLWasmArithmeticExceptions: 0
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
@@ -789,6 +789,7 @@ PlayerSettings:
   webGLPowerPreference: 2
   scriptingDefineSymbols:
     Standalone: MOREMOUNTAINS_INVENTORYENGINE;PMS_CINEMACHINE;PMS_CINE_MACHINE_2_6_OR_NEWER;PMS_CINE_MACHINE_2_6_1_OR_NEWER;PMS_CINE_MACHINE_2_8_OR_NEWER
+    WebGL: PMS_CINEMACHINE;PMS_CINE_MACHINE_2_6_OR_NEWER;PMS_CINE_MACHINE_2_6_1_OR_NEWER;PMS_CINE_MACHINE_2_8_OR_NEWER;MOREMOUNTAINS_INVENTORYENGINE
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

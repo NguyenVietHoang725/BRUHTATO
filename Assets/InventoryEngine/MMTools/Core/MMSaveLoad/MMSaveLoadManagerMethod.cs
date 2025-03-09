@@ -53,9 +53,13 @@ namespace MoreMountains.Tools
 					_saveLoadManagerMethod = new MMSaveLoadManagerMethodJsonEncrypted();
 					((MMSaveLoadManagerEncrypter)_saveLoadManagerMethod).Key = EncryptionKey;
 					break;
+				case MMSaveLoadManagerMethods.Server:
+					_saveLoadManagerMethod = new MMSaveLoadManagerMethodServer(); // 🔥 Thêm lớp xử lý server
+					break;
 			}
 			MMSaveLoadManager.SaveLoadMethod = _saveLoadManagerMethod;
 		}
+
 	}    
 }
 
