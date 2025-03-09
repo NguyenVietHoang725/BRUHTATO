@@ -715,6 +715,15 @@ namespace MoreMountains.InventoryEngine
 		/// <param name="serializedInventory">Serialized inventory.</param>
 		protected virtual void FillSerializedInventory(SerializedInventory serializedInventory)
 		{
+			if (display == null)
+			{
+				Debug.LogError("❌ InventoryDisplay chưa được gán! Kiểm tra trong Editor.");
+			}
+			else
+			{
+				Debug.Log($"🎯 InventoryDisplay: {display.name}");
+			}
+
 			serializedInventory.NumberOfRows = display.NumberOfRows;
 			serializedInventory.NumberOfColumns = display.NumberOfColumns;
 			serializedInventory.InventoryType = InventoryType;
@@ -749,6 +758,8 @@ namespace MoreMountains.InventoryEngine
 				return;
 			}
 
+			display.NumberOfRows = serializedInventory.NumberOfRows;
+			display.NumberOfColumns = serializedInventory.NumberOfColumns;
 			InventoryType = serializedInventory.InventoryType;
 			DrawContentInInspector = serializedInventory.DrawContentInInspector;
 			Content = new InventoryItem[serializedInventory.ContentType.Length];
