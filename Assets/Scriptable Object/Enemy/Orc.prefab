@@ -193,6 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a3b5993a5c90c4098d5f8de7988946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ManaOrb: {fileID: 7456949383597425095, guid: 51c8bbcaceed5784cb6fda448f3540a2, type: 3}
   anim: {fileID: 0}
   cooldown: 1
 --- !u!95 &1439554793618833322

@@ -12,7 +12,7 @@ namespace MoreMountains.InventoryEngine
 	{
 		[Header("Health Bonus")]
 		/// the amount of health to add to the player when the item is used
-		public int HealthBonus;
+		public int StatsBonus;
 
 		/// <summary>
 		/// What happens when the object is used 
@@ -24,7 +24,7 @@ namespace MoreMountains.InventoryEngine
 			// with something like : 
 			// Player.Life += HealthValue;
 			// of course this all depends on your game codebase.
-			Debug.LogFormat("increase character "+playerID+"'s health by "+HealthBonus);
+			Debug.LogFormat("increase character "+playerID+"'s health by "+StatsBonus);
 			return true;
 		}
 		
