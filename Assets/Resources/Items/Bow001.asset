@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4829572fcd2f98479c803ffaf809268, type: 3}
-  m_Name: Sword001
+  m_Name: Bow001
   m_EditorClassIdentifier: 
-  ItemID: Sword001
+  ItemID: Bow001
   TargetInventoryName: RogueMainInventory
   ForceSlotIndex: 0
   TargetIndex: 0
@@ -38,10 +38,10 @@ MonoBehaviour:
     AllowEquipShortcut: 1
     AllowUseShortcut: 1
   Quantity: 1
-  ItemName: Sword
-  ShortDescription: A normal sword.
-  Description: A normal sword made from iron ingot.
-  Icon: {fileID: 912898103, guid: d0b44a6e1f8c4d44d865430c45dfe153, type: 3}
+  ItemName: Bow
+  ShortDescription: An old bow
+  Description: 'An old '
+  Icon: {fileID: 1650179711, guid: 9df8c6ff4d329924b936169bd61da614, type: 3}
   Prefab: {fileID: 0}
   ForcePrefabDropQuantity: 0
   PrefabDropQuantity: 1
@@ -96,4 +96,4 @@ MonoBehaviour:
   MovedSound: {fileID: 0}
   DroppedSound: {fileID: 0}
   UseDefaultSoundsIfNull: 1
-  WeaponSprite: {fileID: 912898103, guid: d0b44a6e1f8c4d44d865430c45dfe153, type: 3}
+  WeaponSprite: {fileID: 1650179711, guid: 9df8c6ff4d329924b936169bd61da614, type: 3}

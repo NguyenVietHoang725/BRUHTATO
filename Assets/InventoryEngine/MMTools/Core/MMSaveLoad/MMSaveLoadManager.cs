@@ -30,7 +30,7 @@ namespace MoreMountains.Tools
 		/// the method to use when saving and loading files (has to be the same at both times of course)
 		public static IMMSaveLoadManagerMethod SaveLoadMethod = new MMSaveLoadManagerMethodBinary();
 		/// the default top level folder the system will use to save the file
-		private const string _baseFolderName = "/MMData/";
+		private const string _baseFolderName = "MMData";
 		/// the name of the save folder if none is provided
 		private const string _defaultFolderName = "MMSaveLoadManager";
 
@@ -43,19 +43,9 @@ namespace MoreMountains.Tools
 		{
 			string savePath;
 			// depending on the device we're on, we assemble the path
-			if (Application.platform == RuntimePlatform.IPhonePlayer) 
-			{
-				savePath = Application.persistentDataPath + _baseFolderName;
-			} 
-			else 
-			{
-				savePath = Application.persistentDataPath + _baseFolderName;
-			}
-			#if UNITY_EDITOR
-			savePath = Application.dataPath + _baseFolderName;
-			#endif
+			savePath = Path.Combine(Application.persistentDataPath, _baseFolderName);
 
-			savePath = savePath + folderName + "/";
+			savePath = Path.Combine(savePath, folderName);
 			return savePath;
 		}
 

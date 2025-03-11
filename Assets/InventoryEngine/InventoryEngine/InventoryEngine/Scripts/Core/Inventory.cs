@@ -16,8 +16,6 @@ namespace MoreMountains.InventoryEngine
 	public class Inventory : MonoBehaviour, MMEventListener<MMInventoryEvent>, MMEventListener<MMGameEvent>
 	{
 		public static List<Inventory> RegisteredInventories;
-
-		[SerializeField] private InventoryDisplay display;
 		
 		[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
 		protected static void InitializeStatics()
@@ -111,8 +109,6 @@ namespace MoreMountains.InventoryEngine
 		}
 
 		public static string _resourceItemPath = "Items/";
-		public static string _saveFolderName = "InventoryEngine/";
-		public static string _saveFileExtension = ".inventory";
 
 		/// <summary>
 		/// Returns (if found) an inventory matching the searched name and playerID
@@ -603,111 +599,28 @@ namespace MoreMountains.InventoryEngine
 		/// <summary>
 		/// Saves the inventory to a file
 		/// </summary>
-	[Header("Save Settings")]
-    public new MMSaveLoadManagerMethods SaveLoadMethod = MMSaveLoadManagerMethods.Binary;
+	[Header("Save Settings")] 
+	public string SaveFolderName;
     public string SaveFileName = "InventorySave";
-    public string SaveFolderName = "InventorySaves/";
-    public string SaveFileExtension = ".inventory";
-    public new string EncryptionKey = "DefaultKey";
-
+    
     private IMMSaveLoadManagerMethod _saveLoadManagerMethod;
 
     public virtual void SaveInventory()
     {
-	    InitializeSaveLoadMethod();
 	    SerializedInventory serializedInventory = new SerializedInventory();
 	    FillSerializedInventory(serializedInventory);
-	    MMSaveLoadManager.Save(serializedInventory, SaveFileName + SaveFileExtension, SaveFolderName);
+	    string json = JsonUtility.ToJson(serializedInventory);
+	    PlayerPrefs.SetString(DetermineSaveName(), json);
+	    PlayerPrefs.Save();
     }
 
     public virtual void LoadSavedInventory()
     {
-	    InitializeSaveLoadMethod();
-
-	    if (SaveLoadMethod == MMSaveLoadManagerMethods.Server)
-	    {
-		    StartCoroutine(LoadSavedInventoryCoroutine()); // 🔄 Load từ Server
-	    }
-	    else
-	    {
-		    SerializedInventory serializedInventory = (SerializedInventory)MMSaveLoadManager.Load(
-			    typeof(SerializedInventory), SaveFileName + SaveFileExtension, SaveFolderName);
-		    ExtractSerializedInventory(serializedInventory);
-		    MMInventoryEvent.Trigger(MMInventoryEventType.InventoryLoaded, null, this.name, null, 0, 0, PlayerID);
-	    }
+	    string json = PlayerPrefs.GetString(DetermineSaveName());
+	    SerializedInventory serializedInventory = JsonUtility.FromJson<SerializedInventory>(json);
+	    ExtractSerializedInventory(serializedInventory);
+	    MMInventoryEvent.Trigger(MMInventoryEventType.InventoryLoaded, null, this.name, null, 0, 0, PlayerID);
     }
-
-
-    private IEnumerator LoadSavedInventoryCoroutine()
-    {
-	    SerializedInventory serializedInventory = null;
-    
-	    Debug.Log("🔄 Bắt đầu tải Inventory từ server...");
-
-	    yield return StartCoroutine(LoadInventoryFromServer((result) => 
-	    {
-		    serializedInventory = result as SerializedInventory;
-	    }));
-
-	    if (serializedInventory != null)
-	    {
-		    Debug.Log("✅ Inventory tải thành công, bắt đầu áp dụng dữ liệu...");
-		    ExtractSerializedInventory(serializedInventory);
-		    MMInventoryEvent.Trigger(MMInventoryEventType.InventoryLoaded, null, this.name, null, 0, 0, PlayerID);
-	    }
-	    else
-	    {
-		    Debug.LogError("❌ Không thể tải Inventory từ server.");
-	    }
-    }
-
-
-    private IEnumerator LoadInventoryFromServer(Action<object> callback)
-    {
-	    string requestUrl = $"http://localhost:3000/api/inventory/load?name={SaveFileName}";
-
-	    using (UnityWebRequest request = UnityWebRequest.Get(requestUrl))
-	    {
-		    yield return request.SendWebRequest();
-
-		    if (request.result == UnityWebRequest.Result.Success)
-		    {
-			    string json = request.downloadHandler.text;
-			    callback?.Invoke(JsonUtility.FromJson(json, typeof(SerializedInventory)));
-		    }
-		    else
-		    {
-			    Debug.LogError($"❌ Lỗi tải file từ server: {request.error}");
-			    callback?.Invoke(null);
-		    }
-	    }
-    }
-
-    private void InitializeSaveLoadMethod()
-    {
-	    switch (SaveLoadMethod)
-	    {
-		    case MMSaveLoadManagerMethods.Binary:
-			    _saveLoadManagerMethod = new MMSaveLoadManagerMethodBinary();
-			    break;
-		    case MMSaveLoadManagerMethods.BinaryEncrypted:
-			    _saveLoadManagerMethod = new MMSaveLoadManagerMethodBinaryEncrypted();
-			    (_saveLoadManagerMethod as MMSaveLoadManagerEncrypter).Key = EncryptionKey;
-			    break;
-		    case MMSaveLoadManagerMethods.Json:
-			    _saveLoadManagerMethod = new MMSaveLoadManagerMethodJson();
-			    break;
-		    case MMSaveLoadManagerMethods.JsonEncrypted:
-			    _saveLoadManagerMethod = new MMSaveLoadManagerMethodJsonEncrypted();
-			    (_saveLoadManagerMethod as MMSaveLoadManagerEncrypter).Key = EncryptionKey;
-			    break;
-		    case MMSaveLoadManagerMethods.Server: // 🔥 Thêm lưu trữ trên server
-			    _saveLoadManagerMethod = new MMSaveLoadManagerMethodServer();
-			    break;
-	    }
-	    MMSaveLoadManager.SaveLoadMethod = _saveLoadManagerMethod;
-    }
-
 
 		/// <summary>
 		/// Fills the serialized inventory for storage
@@ -715,17 +628,6 @@ namespace MoreMountains.InventoryEngine
 		/// <param name="serializedInventory">Serialized inventory.</param>
 		protected virtual void FillSerializedInventory(SerializedInventory serializedInventory)
 		{
-			if (display == null)
-			{
-				Debug.LogError("❌ InventoryDisplay chưa được gán! Kiểm tra trong Editor.");
-			}
-			else
-			{
-				Debug.Log($"🎯 InventoryDisplay: {display.name}");
-			}
-
-			serializedInventory.NumberOfRows = display.NumberOfRows;
-			serializedInventory.NumberOfColumns = display.NumberOfColumns;
 			serializedInventory.InventoryType = InventoryType;
 			serializedInventory.DrawContentInInspector = DrawContentInInspector;
 			serializedInventory.ContentType = new string[Content.Length];
@@ -757,9 +659,7 @@ namespace MoreMountains.InventoryEngine
 			{
 				return;
 			}
-
-			display.NumberOfRows = serializedInventory.NumberOfRows;
-			display.NumberOfColumns = serializedInventory.NumberOfColumns;
+			
 			InventoryType = serializedInventory.InventoryType;
 			DrawContentInInspector = serializedInventory.DrawContentInInspector;
 			Content = new InventoryItem[serializedInventory.ContentType.Length];
@@ -789,9 +689,9 @@ namespace MoreMountains.InventoryEngine
 			}
 		}
 
-		protected virtual string DetermineSaveName()
+		public virtual string DetermineSaveName()
 		{
-			return gameObject.name + "_" + PlayerID + _saveFileExtension;
+			return SaveFileName + PlayerID;
 		}
 
 		/// <summary>
@@ -799,7 +699,7 @@ namespace MoreMountains.InventoryEngine
 		/// </summary>
 		public virtual void ResetSavedInventory()
 		{
-			MMSaveLoadManager.DeleteSave(DetermineSaveName(), _saveFolderName);
+			MMSaveLoadManager.DeleteSave(DetermineSaveName(), SaveFolderName);
 			Debug.LogFormat("Inventory save file deleted");
 		}
 
