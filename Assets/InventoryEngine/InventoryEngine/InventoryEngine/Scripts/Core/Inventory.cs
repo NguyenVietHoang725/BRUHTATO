@@ -2,6 +2,9 @@
 using MoreMountains.Tools;
 using System.Collections.Generic;
 using System;
+using System.Collections;
+using System.IO;
+using UnityEngine.Networking;
 
 namespace MoreMountains.InventoryEngine
 {
@@ -106,8 +109,6 @@ namespace MoreMountains.InventoryEngine
 		}
 
 		public static string _resourceItemPath = "Items/";
-		public static string _saveFolderName = "InventoryEngine/";
-		public static string _saveFileExtension = ".inventory";
 
 		/// <summary>
 		/// Returns (if found) an inventory matching the searched name and playerID
@@ -143,7 +144,7 @@ namespace MoreMountains.InventoryEngine
 		/// <summary>
 		/// Registers this inventory so other scripts can access it later on
 		/// </summary>
-		protected virtual void RegisterInventory()
+		public virtual void RegisterInventory()
 		{
 			if (RegisteredInventories == null)
 			{
@@ -598,22 +599,28 @@ namespace MoreMountains.InventoryEngine
 		/// <summary>
 		/// Saves the inventory to a file
 		/// </summary>
-		public virtual void SaveInventory()
-		{
-			SerializedInventory serializedInventory = new SerializedInventory();
-			FillSerializedInventory(serializedInventory);
-			MMSaveLoadManager.Save(serializedInventory, DetermineSaveName(), _saveFolderName);
-		}
+	[Header("Save Settings")] 
+	public string SaveFolderName;
+    public string SaveFileName = "InventorySave";
+    
+    private IMMSaveLoadManagerMethod _saveLoadManagerMethod;
 
-		/// <summary>
-		/// Tries to load the inventory if a file is present
-		/// </summary>
-		public virtual void LoadSavedInventory()
-		{
-			SerializedInventory serializedInventory = (SerializedInventory)MMSaveLoadManager.Load(typeof(SerializedInventory), DetermineSaveName(), _saveFolderName);
-			ExtractSerializedInventory(serializedInventory);
-			MMInventoryEvent.Trigger(MMInventoryEventType.InventoryLoaded, null, this.name, null, 0, 0, PlayerID);
-		}
+    public virtual void SaveInventory()
+    {
+	    SerializedInventory serializedInventory = new SerializedInventory();
+	    FillSerializedInventory(serializedInventory);
+	    string json = JsonUtility.ToJson(serializedInventory);
+	    PlayerPrefs.SetString(DetermineSaveName(), json);
+	    PlayerPrefs.Save();
+    }
+
+    public virtual void LoadSavedInventory()
+    {
+	    string json = PlayerPrefs.GetString(DetermineSaveName());
+	    SerializedInventory serializedInventory = JsonUtility.FromJson<SerializedInventory>(json);
+	    ExtractSerializedInventory(serializedInventory);
+	    MMInventoryEvent.Trigger(MMInventoryEventType.InventoryLoaded, null, this.name, null, 0, 0, PlayerID);
+    }
 
 		/// <summary>
 		/// Fills the serialized inventory for storage
@@ -652,7 +659,7 @@ namespace MoreMountains.InventoryEngine
 			{
 				return;
 			}
-
+			
 			InventoryType = serializedInventory.InventoryType;
 			DrawContentInInspector = serializedInventory.DrawContentInInspector;
 			Content = new InventoryItem[serializedInventory.ContentType.Length];
@@ -682,9 +689,9 @@ namespace MoreMountains.InventoryEngine
 			}
 		}
 
-		protected virtual string DetermineSaveName()
+		public virtual string DetermineSaveName()
 		{
-			return gameObject.name + "_" + PlayerID + _saveFileExtension;
+			return SaveFileName + PlayerID;
 		}
 
 		/// <summary>
@@ -692,7 +699,7 @@ namespace MoreMountains.InventoryEngine
 		/// </summary>
 		public virtual void ResetSavedInventory()
 		{
-			MMSaveLoadManager.DeleteSave(DetermineSaveName(), _saveFolderName);
+			MMSaveLoadManager.DeleteSave(DetermineSaveName(), SaveFolderName);
 			Debug.LogFormat("Inventory save file deleted");
 		}
 

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2208822599092462716}
   - component: {fileID: 8807780522607158001}
   - component: {fileID: 6253300190088201356}
+  - component: {fileID: 3432984468695989038}
   m_Layer: 0
   m_Name: Bruhtato
   m_TagString: Player
@@ -217,3 +218,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 8807780522607158001}
   vcam: {fileID: 0}
+--- !u!114 &3432984468695989038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7664744637007160958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c01e7396a946fe429ef7fd91eb3dd22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerID: Player1
