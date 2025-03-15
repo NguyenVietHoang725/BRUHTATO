@@ -26,21 +26,16 @@ public class SavePoint : NPCController
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && stayCheck)
             NPCFunction();
+        else if(!stayCheck)
+            saveLoadButton.SetActive(false);
     }
 
     public override void NPCFunction()
     {
-        if(stayCheck)
-            saveLoadButton.SetActive(true);
-        else
-            saveLoadButton.SetActive(false);
-    }
-
-    private void OnApplicationQuit()
-    {
         MMGameEvent.Trigger("Save");
         Debug.Log("NPC Game Manager Saved Inventory");
+        saveLoadButton.SetActive(true);
     }
 }

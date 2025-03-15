@@ -6,40 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7ed137f6-678d-44bf-baa4-c2db03f637c1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/Core/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/Core/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/MMTools/Core/MMSaveLoad/MMSaveLoadManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/MMTools/Core/MMSaveLoad/MMSaveLoadManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/MMTools/Core/MMSaveLoad/MMSaveLoadManagerMethod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/MMTools/Core/MMSaveLoad/MMSaveLoadManagerMethod.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/MMTools/Core/MMSaveLoad/MMSaveLoadManagerMethodServer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/MMTools/Core/MMSaveLoad/MMSaveLoadManagerMethodServer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/MMTools/Core/MMSaveLoad/MonoBehaviourHelper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/MMTools/Core/MMSaveLoad/MonoBehaviourHelper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventoryEngine.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventoryEngine/RogueArmorInventory_Player1.inventory" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventoryEngine/RogueArmorInventory_Player1.inventory.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventoryEngine/RogueArmorInventory_Player2.inventory" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventoryEngine/RogueArmorInventory_Player2.inventory.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventoryEngine/RogueBombInventory_Player1.inventory" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventoryEngine/RogueBombInventory_Player1.inventory.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventoryEngine/RogueBombInventory_Player2.inventory" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventoryEngine/RogueBombInventory_Player2.inventory.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventoryEngine/RogueMainInventory_Player1.inventory" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventoryEngine/RogueMainInventory_Player1.inventory.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventoryEngine/RogueMainInventory_Player2.inventory" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventoryEngine/RogueMainInventory_Player2.inventory.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventoryEngine/RogueWeaponInventory_Player1.inventory" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventoryEngine/RogueWeaponInventory_Player1.inventory.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventoryEngine/RogueWeaponInventory_Player2.inventory" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventoryEngine/RogueWeaponInventory_Player2.inventory.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventorySaves.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MMData/InventorySaves.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventorySaves/ArmorInventorySave.inventory" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MMData/InventorySaves/ArmorInventorySave.inventory" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventorySaves/ArmorInventorySave.inventory.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MMData/InventorySaves/ArmorInventorySave.inventory.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventorySaves/MainInventorySave.inventory" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MMData/InventorySaves/MainInventorySave.inventory" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventorySaves/MainInventorySave.inventory.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MMData/InventorySaves/MainInventorySave.inventory.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventorySaves/WeaponInventorySave.inventory" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MMData/InventorySaves/WeaponInventorySave.inventory" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MMData/InventorySaves/WeaponInventorySave.inventory.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MMData/InventorySaves/WeaponInventorySave.inventory.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Sword001.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Items/Sword001.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Event1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Event1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/System/SavePoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/SavePoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/System/ServerSync.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/ServerSync.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,6 +132,8 @@
       <workItem from="1741503264606" duration="9784000" />
       <workItem from="1741536472067" duration="11655000" />
       <workItem from="1741712077905" duration="9453000" />
+      <workItem from="1741886129686" duration="5801000" />
+      <workItem from="1741929222824" duration="1709000" />
     </task>
     <servers />
   </component>

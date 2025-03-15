@@ -15,15 +15,17 @@ public class ServerSync : MonoBehaviour
     {
         // Lấy dữ liệu từ PlayerPrefs
         string inventoryData = PlayerPrefs.GetString(inventory.DetermineSaveName());
+        Debug.Log("Data in PlayerPrefs: " + inventoryData);
 
         // Tạo JSON object chứa dữ liệu và playerID
-        var dataToSend = new
+        ServerData dataToSend = new ServerData()
         {
             playerID = this.playerID, // Thêm playerID vào dữ liệu gửi lên server
             inventory = useEncryption ? EncryptData(inventoryData) : inventoryData // Mã hóa nếu cần
         };
 
         string jsonData = JsonUtility.ToJson(dataToSend);
+        Debug.Log("Data sync to server: " + jsonData);
 
         // Gửi dữ liệu lên server tại endpoint /save
         string saveUrl = serverBaseUrl + "/save";
@@ -83,12 +85,14 @@ public class ServerSync : MonoBehaviour
             {
                 // Parse dữ liệu từ server
                 string jsonData = request.downloadHandler.text;
-                var serverData = JsonUtility.FromJson<ServerData>(jsonData);
+                Debug.Log("Data sync from server: " + jsonData);
+                ServerData serverData = JsonUtility.FromJson<ServerData>(jsonData);
 
                 // Kiểm tra tính hợp lệ của dữ liệu trước khi ghi đè
                 if (!string.IsNullOrEmpty(serverData.inventory))
                 {
                     string inventoryData = useEncryption ? DecryptData(serverData.inventory) : serverData.inventory; // Giải mã nếu cần
+                    Debug.Log("Data after parse: " + inventoryData);
 
                     // Kiểm tra version hoặc timestamp để tránh xung đột dữ liệu
                     if (IsNewerData(serverData))
@@ -118,6 +122,7 @@ public class ServerSync : MonoBehaviour
     [System.Serializable]
     private class ServerData
     {
+        public string playerID;
         public string inventory;
         public long timestamp; // Thêm timestamp để kiểm tra phiên bản dữ liệu
     }
