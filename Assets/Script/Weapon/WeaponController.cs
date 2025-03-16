@@ -20,7 +20,7 @@ public class WeaponController : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
-        stats = GameObject.FindWithTag("Weapon").GetComponent<WeaponStats>();
+        stats = this.GetComponent<WeaponStats>();
     }
 
     private void Update()

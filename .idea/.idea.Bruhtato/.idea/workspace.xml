@@ -6,9 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="7ed137f6-678d-44bf-baa4-c2db03f637c1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Prefabs/UICamera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Prefabs/UICamera.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/DemoCharacterInputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/DemoCharacterInputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/InventoryDemoCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/InventoryDemoCharacter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/Items/ArmorItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/Items/ArmorItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/Items/WeaponItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/Items/WeaponItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/Core/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/Core/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/Core/InventoryItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/Core/InventoryItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Bow001.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Items/Bow001.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Sword001.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Items/Sword001.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Event1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Event1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/SavePoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/SavePoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/ServerSync.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/ServerSync.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/System/EnemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/EnemySpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapon/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponDamage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Bars.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Bars.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Main Camera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Main Camera.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +54,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Han&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Ari-RecreatingTP&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -134,6 +147,8 @@
       <workItem from="1741712077905" duration="9453000" />
       <workItem from="1741886129686" duration="5801000" />
       <workItem from="1741929222824" duration="1709000" />
+      <workItem from="1742010410928" duration="1227000" />
+      <workItem from="1742095285753" duration="3421000" />
     </task>
     <servers />
   </component>

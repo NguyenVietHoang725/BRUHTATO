@@ -35,6 +35,6 @@ public class EnemySpawner : MonoBehaviour
     private void SpawnEnemy()
     {
         int element = Random.Range(0, enemyPrefab.Length);
-        GameObject newEnemy = Instantiate(enemyPrefab[element], new Vector3(Random.Range(-5,5), Random.Range(6,16),0), Quaternion.identity);
+        GameObject newEnemy = Instantiate(enemyPrefab[element], new Vector3(Random.Range(-7,7), Random.Range(-7,7),0), Quaternion.identity);
     }
 }

@@ -14,7 +14,7 @@ namespace MoreMountains.InventoryEngine
 	{
 		[Header("Weapon")]
 		/// the sprite to use to show the weapon when equipped
-		public Sprite WeaponSprite;
+		public GameObject WeaponPrefab;
 
 		/// <summary>
 		/// What happens when the object is used 
@@ -22,7 +22,7 @@ namespace MoreMountains.InventoryEngine
 		public override bool Equip(string playerID)
 		{
 			base.Equip(playerID);
-			TargetInventory(playerID).TargetTransform.GetComponent<InventoryDemoCharacter>().SetWeapon(WeaponSprite,this);
+			TargetInventory(playerID).TargetTransform.GetComponent<InventoryDemoCharacter>().SetWeapon(WeaponPrefab,this);
 			return true;
 		}
 

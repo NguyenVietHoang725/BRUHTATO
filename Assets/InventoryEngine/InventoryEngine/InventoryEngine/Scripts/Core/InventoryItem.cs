@@ -138,7 +138,9 @@ namespace MoreMountains.InventoryEngine
 		[Header("Equippable")]
 		/// If this item is equippable, you can set here its target inventory name (for example ArmorInventory). Of course you'll need an inventory with a matching name in your scene.
 		[Tooltip("If this item is equippable, you can set here its target inventory name (for example ArmorInventory). Of course you'll need an inventory with a matching name in your scene.")]
-		public string TargetEquipmentInventoryName;
+		public string TargetEquipmentInventoryName1;
+
+		public string TargetEquipmentInventoryName2;
 		/// the sound the item should play when equipped (optional)
 		[Tooltip("the sound the item should play when equipped (optional)")]
 		public AudioClip EquippedSound;
@@ -182,11 +184,12 @@ namespace MoreMountains.InventoryEngine
 		/// <value>The target equipment inventory.</value>
 		public virtual Inventory TargetEquipmentInventory(string playerID)
 		{ 
-			if (TargetEquipmentInventoryName == null)
+			if (TargetEquipmentInventoryName1 == null || TargetEquipmentInventoryName2 == null)
 			{
 				return null;
 			}
-			_targetEquipmentInventory = Inventory.FindInventory(TargetEquipmentInventoryName, playerID);
+			
+			_targetEquipmentInventory = Inventory.FindInventory(TargetEquipmentInventoryName1, playerID);
 			return _targetEquipmentInventory;
 		}
 

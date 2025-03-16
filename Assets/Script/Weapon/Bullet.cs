@@ -15,7 +15,7 @@ public class Bullet : MonoBehaviour
 
     private void Start()
     {
-        stats = GameObject.FindGameObjectWithTag("Weapon").GetComponent<WeaponStats>();
+        stats = this.GetComponent<WeaponStats>();
         playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<Stats>();
         countdown = 1 / stats.atkSpeed;
     }

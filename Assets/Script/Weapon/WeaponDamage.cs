@@ -12,7 +12,7 @@ public class WeaponDamage : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindWithTag("Player").GetComponent<Stats>();
-        wp = GameObject.FindWithTag("Weapon").GetComponent<WeaponStats>();
+        wp = this.GetComponent<WeaponStats>();
     }
 
     private void OnTriggerEnter2D(Collider2D collider)

@@ -857,7 +857,7 @@ namespace MoreMountains.InventoryEngine
 			}
 			item.SpawnPrefab(PlayerID);
             
-			if (this.name == item.TargetEquipmentInventoryName)
+			if (this.name == item.TargetEquipmentInventoryName1)
 			{
 				if (item.UnEquip(PlayerID))
 				{
@@ -867,7 +867,16 @@ namespace MoreMountains.InventoryEngine
 			{
 				DestroyItem(index);
 			}
-
+			if (this.name == item.TargetEquipmentInventoryName2)
+			{
+				if (item.UnEquip(PlayerID))
+				{
+					DestroyItem(index);
+				}
+			} else
+			{
+				DestroyItem(index);
+			}
 		}
 
 		public virtual void DestroyItem(InventoryItem item, int index, InventorySlot slot = null)
