@@ -461,7 +461,7 @@ namespace MoreMountains.InventoryEngine
 		/// <summary>
 		/// Draws the content of the inventory (slots and icons)
 		/// </summary>
-		protected virtual void UpdateInventoryContent ()             
+		public virtual void UpdateInventoryContent ()             
 		{      
 			if (_contentLastUpdate == null || _contentLastUpdate.Count == 0)
 			{

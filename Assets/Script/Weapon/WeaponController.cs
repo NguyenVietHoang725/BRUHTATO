@@ -21,6 +21,7 @@ public class WeaponController : MonoBehaviour
     {
         player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
         stats = this.GetComponent<WeaponStats>();
+        player.transform.localScale = new Vector3(1, 1, 1);
     }
 
     private void Update()

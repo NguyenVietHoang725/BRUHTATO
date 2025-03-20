@@ -699,7 +699,7 @@ namespace MoreMountains.InventoryEngine
 		/// </summary>
 		public virtual void ResetSavedInventory()
 		{
-			MMSaveLoadManager.DeleteSave(DetermineSaveName(), SaveFolderName);
+			PlayerPrefs.DeleteKey(DetermineSaveName());
 			Debug.LogFormat("Inventory save file deleted");
 		}
 
@@ -857,17 +857,7 @@ namespace MoreMountains.InventoryEngine
 			}
 			item.SpawnPrefab(PlayerID);
             
-			if (this.name == item.TargetEquipmentInventoryName1)
-			{
-				if (item.UnEquip(PlayerID))
-				{
-					DestroyItem(index);
-				}
-			} else
-			{
-				DestroyItem(index);
-			}
-			if (this.name == item.TargetEquipmentInventoryName2)
+			if (this.name == item.TargetEquipmentInventoryName)
 			{
 				if (item.UnEquip(PlayerID))
 				{

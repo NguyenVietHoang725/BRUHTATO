@@ -7,7 +7,7 @@ using UnityEngine;
 public class WeaponStats : MonoBehaviour
 {
     public int atk, mpConsume;
-    public float atkSpeed, critRate, CD;
+    public float atkSpeed, critRate;
     public bool rechargable, multishoot;
 
     [SerializeField] private Stats player;

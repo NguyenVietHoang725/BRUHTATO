@@ -96,4 +96,3 @@ MonoBehaviour:
   MovedSound: {fileID: 0}
   DroppedSound: {fileID: 0}
   UseDefaultSoundsIfNull: 1
-  WeaponSprite: {fileID: 912898103, guid: d0b44a6e1f8c4d44d865430c45dfe153, type: 3}

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using MoreMountains.InventoryEngine;
 using UnityEngine;
@@ -6,15 +7,15 @@ using UnityEngine.Networking;
 public class ServerSync : MonoBehaviour
 {
     [SerializeField] private string serverBaseUrl = "https://yourserver.com/api/inventory"; // URL cơ sở của server
-    [SerializeField] private Inventory inventory; // Tham chiếu đến inventory
+    [SerializeField] private string inventorySaveName = "MainInventorySavePlayer1";
     [SerializeField] private string playerID = "Player1"; // Định danh duy nhất của người chơi
     [SerializeField] private bool useEncryption = false; // Tùy chọn sử dụng mã hóa
-
+    
     // Lưu dữ liệu lên server tại endpoint /save
     public void SaveDataToServer()
     {
         // Lấy dữ liệu từ PlayerPrefs
-        string inventoryData = PlayerPrefs.GetString(inventory.DetermineSaveName());
+        string inventoryData = PlayerPrefs.GetString(inventorySaveName);
         Debug.Log("Data in PlayerPrefs: " + inventoryData);
 
         // Tạo JSON object chứa dữ liệu và playerID
@@ -94,17 +95,17 @@ public class ServerSync : MonoBehaviour
                     string inventoryData = useEncryption ? DecryptData(serverData.inventory) : serverData.inventory; // Giải mã nếu cần
                     Debug.Log("Data after parse: " + inventoryData);
 
-                    // Kiểm tra version hoặc timestamp để tránh xung đột dữ liệu
-                    if (IsNewerData(serverData))
-                    {
-                        PlayerPrefs.SetString(inventory.DetermineSaveName(), inventoryData);
-                        PlayerPrefs.Save();
-                        Debug.Log("Data loaded from server successfully!");
-                    }
-                    else
-                    {
-                        Debug.LogWarning("Local data is up-to-date. No need to overwrite.");
-                    }
+                    PlayerPrefs.SetString(inventorySaveName, inventoryData);
+                    PlayerPrefs.Save();
+                    Debug.Log("Data loaded from server successfully!");
+                    // // Kiểm tra version hoặc timestamp để tránh xung đột dữ liệu
+                    // if (IsNewerData(serverData))
+                    // {
+                    // }
+                    // else
+                    // {
+                    //     Debug.LogWarning("Local data is up-to-date. No need to overwrite.");
+                    // }
                 }
                 else
                 {
@@ -124,18 +125,18 @@ public class ServerSync : MonoBehaviour
     {
         public string playerID;
         public string inventory;
-        public long timestamp; // Thêm timestamp để kiểm tra phiên bản dữ liệu
+        //public long timestamp; // Thêm timestamp để kiểm tra phiên bản dữ liệu
     }
 
     // Kiểm tra xem dữ liệu từ server có mới hơn không
-    private bool IsNewerData(ServerData serverData)
-    {
-        // Lấy timestamp từ PlayerPrefs
-        long localTimestamp = PlayerPrefs.GetInt("InventoryTimestamp", 0);
-
-        // So sánh timestamp
-        return serverData.timestamp > localTimestamp;
-    }
+    // private bool IsNewerData(ServerData serverData)
+    // {
+    //     // Lấy timestamp từ PlayerPrefs
+    //     long localTimestamp = PlayerPrefs.GetInt("InventoryTimestamp", 0);
+    //
+    //     // So sánh timestamp
+    //     return serverData.timestamp > localTimestamp;
+    // }
 
     // Mã hóa dữ liệu (tùy chọn)
     private string EncryptData(string data)

@@ -26,9 +26,9 @@ MonoBehaviour:
   CanMoveObject: 1
   CanSwapObject: 1
   DisplayProperties:
-    DisplayEquipUseButton: 1
+    DisplayEquipUseButton: 0
     DisplayMoveButton: 1
-    DisplayDropButton: 1
+    DisplayDropButton: 0
     DisplayEquipButton: 1
     DisplayUseButton: 1
     DisplayUnequipButton: 1
@@ -42,7 +42,7 @@ MonoBehaviour:
   ShortDescription: An old bow
   Description: 'An old '
   Icon: {fileID: 1650179711, guid: 9df8c6ff4d329924b936169bd61da614, type: 3}
-  Prefab: {fileID: 0}
+  Prefab: {fileID: 7077186332767994831, guid: 1d35795dfe008ac4f9ee854be9ae205c, type: 3}
   ForcePrefabDropQuantity: 0
   PrefabDropQuantity: 1
   DropProperties:
@@ -90,11 +90,9 @@ MonoBehaviour:
   MaximumStack: 1
   MaximumQuantity: 1
   ItemClass: 2
-  TargetEquipmentInventoryName1: RogueWeaponInventory1
-  TargetEquipmentInventoryName2: RogueWeaponInventory2
+  TargetEquipmentInventoryName: RogueWeaponInventory
   EquippedSound: {fileID: 0}
   UsedSound: {fileID: 0}
   MovedSound: {fileID: 0}
   DroppedSound: {fileID: 0}
   UseDefaultSoundsIfNull: 1
-  WeaponPrefab: {fileID: 7077186332767994831, guid: 1d35795dfe008ac4f9ee854be9ae205c, type: 3}

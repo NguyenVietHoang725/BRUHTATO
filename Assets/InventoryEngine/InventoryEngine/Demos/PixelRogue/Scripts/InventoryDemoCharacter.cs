@@ -17,17 +17,10 @@ namespace MoreMountains.InventoryEngine
 			MMInformationAttribute.InformationType.Info, false)]
 
 		public string PlayerID = "Player1";
-		/// the sprite used to show the current weapon
-		public GameObject WeaponPrefab;
-		/// the armor inventory
-		public Inventory WeaponInventory1;
-		/// the weapon inventory
-		public Inventory WeaponInventory2;
+		/// the Weapon inventory
+		public Inventory WeaponInventory;
 
-		private void Start()
-		{
-			WeaponPrefab = GameObject.FindWithTag("Weapon");
-		}
+		public InventoryDisplay WeaponDisplay;
 
 		/// <summary>
 		/// Sets the current weapon sprite
@@ -36,10 +29,47 @@ namespace MoreMountains.InventoryEngine
 		/// <param name="item">Item.</param>
 		public virtual void SetWeapon(GameObject prefab, InventoryItem item)
 		{
-			WeaponPrefab = GameObject.FindWithTag("Weapon");
-			Destroy(WeaponPrefab);
-			WeaponPrefab = prefab;
-			GameObject newWeapon = Instantiate(WeaponPrefab, new Vector3(0,0,0), Quaternion.identity);
+			if(item.name == WeaponInventory.Content[0].name)
+			{
+				UnSetWeapon(item);
+				GameObject newWeapon = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity);
+			}
+		}
+
+		public virtual void UnSetWeapon(InventoryItem item)
+		{
+			if(GameObject.Find("BlankWeapon")) Destroy(GameObject.Find("BlankWeapon").gameObject);
+			if(item.name == WeaponInventory.Content[0].name)
+				Destroy(GameObject.Find(WeaponInventory.Content[0].Prefab.name + "(Clone)"));
+		}
+
+		public void SetButton(int index, bool value)
+		{
+			if (WeaponInventory.Content[index])
+			{
+				WeaponInventory.Content[index].DisplayProperties.DisplayMoveButton = value;
+				WeaponInventory.Content[index].DisplayProperties.DisplayEquipButton = value;
+			}
+		}
+		
+		private void SwapWeapon()
+		{
+			UnSetWeapon(WeaponInventory.Content[0]);
+
+			InventoryItem tmpItem = null;
+			tmpItem = WeaponInventory.Content[0];
+			WeaponInventory.Content[0] = WeaponInventory.Content[1];
+			WeaponInventory.Content[1] = tmpItem;
+
+			WeaponDisplay.UpdateInventoryContent();
+			
+			SetWeapon(WeaponInventory.Content[0].Prefab,WeaponInventory.Content[0]);
+		}
+
+		private void Update()
+		{
+			if(Input.GetKeyDown(KeyCode.E))
+				SwapWeapon();
 		}
 
 		/// <summary>
@@ -50,23 +80,13 @@ namespace MoreMountains.InventoryEngine
 		{
 			if (inventoryEvent.InventoryEventType == MMInventoryEventType.InventoryLoaded)
 			{
-				if (inventoryEvent.TargetInventoryName == "RogueWeaponInventory1")
+				if (inventoryEvent.TargetInventoryName == WeaponInventory.name)
 				{
-					if (WeaponInventory1 != null)
+					if (WeaponInventory != null)
 					{
-						if (!InventoryItem.IsNull(WeaponInventory1.Content [0]))
+						if (!InventoryItem.IsNull(WeaponInventory.Content [0]))
 						{
-							WeaponInventory1.Content [0].Equip (PlayerID);	
-						}
-					}
-				}
-				if (inventoryEvent.TargetInventoryName == "RogueWeaponInventory2")
-				{
-					if (WeaponInventory2 != null)
-					{
-						if (!InventoryItem.IsNull (WeaponInventory2.Content [0]))
-						{
-							WeaponInventory2.Content [0].Equip (PlayerID);
+							WeaponInventory.Content [0].Equip (PlayerID);	
 						}
 					}
 				}
