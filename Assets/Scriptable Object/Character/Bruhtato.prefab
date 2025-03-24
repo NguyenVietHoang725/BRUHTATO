@@ -202,9 +202,10 @@ MonoBehaviour:
   mp: 0
   maxShield: 0
   shield: 0
+  shieldRegenRate: 1
   speed: 4
   critRate: 0.05
-  CD: 3
+  shieldRegenDelay: 3
 --- !u!114 &6253300190088201356
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -18,10 +18,7 @@ public class EnemyDamage : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("Player"))
         {
-            if(collider.gameObject.GetComponent<Stats>().shield != 0)
-                collider.gameObject.GetComponent<Stats>().shield -= damage;
-            else
-                collider.gameObject.GetComponent<Stats>().hp -= damage;
+            collider.gameObject.GetComponent<Stats>().TakeDamage(damage);
         }
     }
 }

@@ -29,7 +29,7 @@ namespace MoreMountains.InventoryEngine
 		[Header("Player ID")] 
 		/// a unique ID used to identify the owner of this inventory
 		[Tooltip("a unique ID used to identify the owner of this inventory")]
-		public string PlayerID = "Player1";
+		public string PlayerID = "PlayerX00";
 
 		/// the complete list of inventory items in this inventory
 		[Tooltip("This is a realtime view of your Inventory's contents. Don't modify this list via the inspector, it's visible for control purposes only.")]
@@ -138,6 +138,7 @@ namespace MoreMountains.InventoryEngine
 		/// </summary>
 		protected virtual void Awake()
 		{
+			PlayerID = PlayerPrefs.GetString("PlayerID");
 			RegisterInventory();
 		}
 

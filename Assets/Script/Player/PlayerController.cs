@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
@@ -45,5 +46,6 @@ public class PlayerController : MonoBehaviour
     private void Death()
     {
         this.gameObject.SetActive(false);
+        SceneManager.LoadScene(1);
     }
 }

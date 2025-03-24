@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace MoreMountains.InventoryEngine
 {
@@ -8,6 +9,7 @@ namespace MoreMountains.InventoryEngine
 	public class InventoryCharacterIdentifier : MonoBehaviour
 	{
 		/// the unique ID of the player
-		public string PlayerID = "Player1";
+		public string PlayerID = "PlayerX00";
+
 	}    
 }

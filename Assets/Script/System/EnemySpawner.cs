@@ -6,6 +6,7 @@ using UnityEngine.Timeline;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] enemyPrefab;
+    [SerializeField] private GameObject buffPanel;
 
     public int min, max, enemyAmount, lvl = 1;
     // Start is called before the first frame update
@@ -27,6 +28,8 @@ public class EnemySpawner : MonoBehaviour
         }
         if(!GameObject.FindWithTag("Enemy"))
         {
+            buffPanel.SetActive(true);
+            Time.timeScale = 0;
             lvl++;
             enemyAmount = Random.Range(min + lvl, max + lvl);
         }

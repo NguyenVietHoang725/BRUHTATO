@@ -16,11 +16,16 @@ namespace MoreMountains.InventoryEngine
 			"A very basic demo character controller, that makes the character move around on the xy axis. Here you can change its speed and bind sprites and equipment inventories.",
 			MMInformationAttribute.InformationType.Info, false)]
 
-		public string PlayerID = "Player1";
+		public string PlayerID = "PlayerX00";
 		/// the Weapon inventory
 		public Inventory WeaponInventory;
 
 		public InventoryDisplay WeaponDisplay;
+
+		private void Awake()
+		{
+			PlayerID = PlayerPrefs.GetString("PlayerID");
+		}
 
 		/// <summary>
 		/// Sets the current weapon sprite

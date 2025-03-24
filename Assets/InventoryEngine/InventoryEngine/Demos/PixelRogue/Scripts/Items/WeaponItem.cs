@@ -17,6 +17,7 @@ namespace MoreMountains.InventoryEngine
 		/// </summary>
 		public override bool Equip(string playerID)
 		{
+			Debug.Log(playerID);
 			base.Equip(playerID);
 			TargetInventory(playerID).TargetTransform.GetComponent<InventoryDemoCharacter>().SetWeapon(Prefab,this);
 			

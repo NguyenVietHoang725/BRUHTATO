@@ -7,10 +7,15 @@ using UnityEngine.Networking;
 public class ServerSync : MonoBehaviour
 {
     [SerializeField] private string serverBaseUrl = "https://yourserver.com/api/inventory"; // URL cơ sở của server
-    [SerializeField] private string inventorySaveName = "MainInventorySavePlayer1";
-    [SerializeField] private string playerID = "Player1"; // Định danh duy nhất của người chơi
-    [SerializeField] private bool useEncryption = false; // Tùy chọn sử dụng mã hóa
-    
+    [SerializeField] private string inventorySaveName = "MainInventorySavePlayerX00";
+    [SerializeField] private bool useEncryption = false; // Tùy chọn sử dụng mã hóa // Định danh duy nhất của người chơi
+    [SerializeField] private string playerID;
+
+    private void Awake()
+    {
+        playerID = PlayerPrefs.GetString("PlayerID");
+    }
+
     // Lưu dữ liệu lên server tại endpoint /save
     public void SaveDataToServer()
     {
@@ -94,18 +99,13 @@ public class ServerSync : MonoBehaviour
                 {
                     string inventoryData = useEncryption ? DecryptData(serverData.inventory) : serverData.inventory; // Giải mã nếu cần
                     Debug.Log("Data after parse: " + inventoryData);
+                    playerID = useEncryption ? DecryptData(serverData.inventory) : serverData.playerID;
+                    Debug.Log("PlayerID: " + playerID);
 
                     PlayerPrefs.SetString(inventorySaveName, inventoryData);
+                    PlayerPrefs.SetString("PlayerID", playerID);
                     PlayerPrefs.Save();
                     Debug.Log("Data loaded from server successfully!");
-                    // // Kiểm tra version hoặc timestamp để tránh xung đột dữ liệu
-                    // if (IsNewerData(serverData))
-                    // {
-                    // }
-                    // else
-                    // {
-                    //     Debug.LogWarning("Local data is up-to-date. No need to overwrite.");
-                    // }
                 }
                 else
                 {
@@ -125,18 +125,7 @@ public class ServerSync : MonoBehaviour
     {
         public string playerID;
         public string inventory;
-        //public long timestamp; // Thêm timestamp để kiểm tra phiên bản dữ liệu
     }
-
-    // Kiểm tra xem dữ liệu từ server có mới hơn không
-    // private bool IsNewerData(ServerData serverData)
-    // {
-    //     // Lấy timestamp từ PlayerPrefs
-    //     long localTimestamp = PlayerPrefs.GetInt("InventoryTimestamp", 0);
-    //
-    //     // So sánh timestamp
-    //     return serverData.timestamp > localTimestamp;
-    // }
 
     // Mã hóa dữ liệu (tùy chọn)
     private string EncryptData(string data)
