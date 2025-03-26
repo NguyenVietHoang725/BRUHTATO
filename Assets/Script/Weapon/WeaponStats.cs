@@ -16,4 +16,11 @@ public class WeaponStats : MonoBehaviour
         player = GameObject.FindWithTag("Player").GetComponent<Stats>();
         player.critRate += critRate;
     }
+
+    public string StatsToString()
+    {
+        return "\nATK: " + atk + "\nMP Consume: " + mpConsume
+               + "\nAttack Speed: " + Math.Round(atkSpeed, 2)
+               + "\nCrit Rate: " + Math.Round(critRate, 2);
+    }
 }

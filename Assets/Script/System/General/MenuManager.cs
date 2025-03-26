@@ -17,8 +17,6 @@ public class MenuManager : MonoBehaviour
 
     public void StoryMode()
     {
-        PlayerPrefs.SetString("PlayerID", "PlayerX00");
-        Debug.Log(PlayerPrefs.GetString("PlayerID"));
         return;
     }
 

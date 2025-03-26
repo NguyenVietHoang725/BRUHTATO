@@ -10,7 +10,8 @@ public class EnemyMovement : MonoBehaviour
     private Vector3 movement;
     private bool flip = true;
     private float counter;
-    [SerializeField] private GameObject ManaOrb;
+    [SerializeField] private GameObject ManaOrb, coin;
+    [SerializeField] private int coinDropRate;
     
     public Animator anim;
     public float cooldown;
@@ -85,7 +86,16 @@ public class EnemyMovement : MonoBehaviour
     
     private void Death()
     {
-        var mpOrb = Instantiate(ManaOrb, this.transform.position, this.transform.rotation);
+        Vector3 randomOffset = new Vector3(
+            Random.Range(-1f, 1f),
+            Random.Range(-1f, 1f),
+            0f
+        );
+        for (int i = 0; i < coinDropRate; ++i)
+        {
+            GameObject coinDrop = Instantiate(coin, transform.position + randomOffset, this.transform.rotation);
+        }
+        GameObject mpOrb = Instantiate(ManaOrb, this.transform.position, this.transform.rotation);
         Destroy(this.gameObject, 0.5f);
     }
 }

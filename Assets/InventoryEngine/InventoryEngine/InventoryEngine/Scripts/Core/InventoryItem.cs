@@ -104,6 +104,8 @@ namespace MoreMountains.InventoryEngine
 		[Tooltip("the item's long description to display in the details panel")]
 		public string Description;
 
+		public int Price;
+
 		[Header("Image")]
 		/// the icon that will be shown on the inventory's slot
 		[Tooltip("the icon that will be shown on the inventory's slot")]

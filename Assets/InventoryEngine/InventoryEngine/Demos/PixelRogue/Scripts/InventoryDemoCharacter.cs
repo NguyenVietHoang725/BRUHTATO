@@ -73,7 +73,7 @@ namespace MoreMountains.InventoryEngine
 
 		private void Update()
 		{
-			if(Input.GetKeyDown(KeyCode.E))
+			if(Input.GetKeyDown(KeyCode.E) && WeaponInventory.Content[0] && WeaponInventory.Content[1])
 				SwapWeapon();
 		}
 

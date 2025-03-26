@@ -10,10 +10,12 @@ public class ServerSync : MonoBehaviour
     [SerializeField] private string inventorySaveName = "MainInventorySavePlayerX00";
     [SerializeField] private bool useEncryption = false; // Tùy chọn sử dụng mã hóa // Định danh duy nhất của người chơi
     [SerializeField] private string playerID;
-
-    private void Awake()
+    
+    public void SetPlayerID(string PlayerID)
     {
-        playerID = PlayerPrefs.GetString("PlayerID");
+        this.playerID = PlayerID;
+        PlayerPrefs.SetString("PlayerID", PlayerID);
+        Debug.Log("Player ID: " + playerID);
     }
 
     // Lưu dữ liệu lên server tại endpoint /save
@@ -26,7 +28,7 @@ public class ServerSync : MonoBehaviour
         // Tạo JSON object chứa dữ liệu và playerID
         ServerData dataToSend = new ServerData()
         {
-            playerID = this.playerID, // Thêm playerID vào dữ liệu gửi lên server
+            playerID = PlayerPrefs.GetString("PlayerID"), // Thêm playerID vào dữ liệu gửi lên server
             inventory = useEncryption ? EncryptData(inventoryData) : inventoryData // Mã hóa nếu cần
         };
 
@@ -99,11 +101,8 @@ public class ServerSync : MonoBehaviour
                 {
                     string inventoryData = useEncryption ? DecryptData(serverData.inventory) : serverData.inventory; // Giải mã nếu cần
                     Debug.Log("Data after parse: " + inventoryData);
-                    playerID = useEncryption ? DecryptData(serverData.inventory) : serverData.playerID;
-                    Debug.Log("PlayerID: " + playerID);
 
                     PlayerPrefs.SetString(inventorySaveName, inventoryData);
-                    PlayerPrefs.SetString("PlayerID", playerID);
                     PlayerPrefs.Save();
                     Debug.Log("Data loaded from server successfully!");
                 }

@@ -41,6 +41,7 @@ MonoBehaviour:
   ItemName: Bow
   ShortDescription: An old bow
   Description: 'An old '
+  Price: 200
   Icon: {fileID: 1650179711, guid: 9df8c6ff4d329924b936169bd61da614, type: 3}
   Prefab: {fileID: 7077186332767994831, guid: 1d35795dfe008ac4f9ee854be9ae205c, type: 3}
   ForcePrefabDropQuantity: 0
