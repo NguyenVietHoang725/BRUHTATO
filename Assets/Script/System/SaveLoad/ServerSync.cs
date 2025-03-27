@@ -10,7 +10,13 @@ public class ServerSync : MonoBehaviour
     [SerializeField] private string inventorySaveName = "MainInventorySavePlayerX00";
     [SerializeField] private bool useEncryption = false; // Tùy chọn sử dụng mã hóa // Định danh duy nhất của người chơi
     [SerializeField] private string playerID;
-    
+
+    private void Awake()
+    {
+        if(PlayerPrefs.HasKey("PlayerID"))
+            playerID = PlayerPrefs.GetString("PlayerID");
+    }
+
     public void SetPlayerID(string PlayerID)
     {
         this.playerID = PlayerID;
