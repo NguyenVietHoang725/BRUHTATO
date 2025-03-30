@@ -7,7 +7,47 @@
     <list default="true" id="7ed137f6-678d-44bf-baa4-c2db03f637c1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Bow/Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Bow/Attack.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Bow/Attack.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Bow/Attack.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Bow/Bow.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Bow/Bow.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Bow/Bow.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Bow/Bow.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Bow/Bow.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Bow/Bow.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Bow/Bow.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Bow/Bow.controller.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Resources/Items/Sword.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Resources/Items/Sword.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/InventoryDemoCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/InventoryDemoCharacter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/Items/WeaponItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/Items/WeaponItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/Core/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/Core/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/Core/ItemPicker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/Core/ItemPicker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/GUI/InventoryDetails.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/GUI/InventoryDetails.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/GUI/InventoryDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/GUI/InventoryDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Bow001.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Bow001.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/M416.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Items/M416.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Sword001.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Sword001.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/PoopsCoin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/PoopsCoin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/Bow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/Bow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/Bow.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/Bow.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/FireWand.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/FireWand.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/M416.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/M416.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/Sword.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/Sword.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Endless1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Endless1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Event1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Event1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/System/General/EnemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/General/EnemySpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/System/General/Gate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/General/Gate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/System/General/MenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/General/MenuManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/System/SaveLoad/SaveLoad.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/SaveLoad/SaveLoad.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/System/SaveLoad/ServerSync.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/SaveLoad/ServerSync.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapon/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Character/Bruhtato.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/Character/Bruhtato.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/EnemySpawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/EnemySpawner.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/Orc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/Orc.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/ShopPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/ShopPanel.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,19 +85,13 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CodeLensConfigurable",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\death\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\death\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\death\\AppData\\Local\\Symbols\\src"
-    ]
   }
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.37f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\Unity Hub\2022.3.37f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;E:\Unity Project\Bruhtato&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\Unity Project\Bruhtato" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -65,7 +99,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.37f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\Unity Hub\2022.3.37f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;E:\Unity Project\Bruhtato&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\Unity Project\Bruhtato" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -157,6 +191,13 @@
       <workItem from="1743006726402" duration="2548000" />
       <workItem from="1743012413609" duration="1007000" />
       <workItem from="1743043466050" duration="232000" />
+      <workItem from="1743053398806" duration="4276000" />
+      <workItem from="1743095848912" duration="692000" />
+      <workItem from="1743096638268" duration="1771000" />
+      <workItem from="1743178753578" duration="4560000" />
+      <workItem from="1743214200385" duration="1034000" />
+      <workItem from="1743226043297" duration="6580000" />
+      <workItem from="1743356263268" duration="3406000" />
     </task>
     <servers />
   </component>
@@ -171,6 +212,7 @@
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

@@ -17,11 +17,4 @@ public class SaveLoad : MonoBehaviour
         Debug.Log("OnSceneLoaded");
         MMGameEvent.Trigger("Load");
     }
-
-    private void OnDestroy()
-    {
-        Debug.Log("OnDestroy");
-        MMGameEvent.Trigger("Save");
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
 }

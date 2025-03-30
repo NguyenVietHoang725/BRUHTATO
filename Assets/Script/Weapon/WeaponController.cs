@@ -16,11 +16,11 @@ public class WeaponController : MonoBehaviour
     private Vector3 movement;
 
     public float angle;
+    public bool canAttack;
 
     private void Start()
     {
         player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
-        stats = this.GetComponent<WeaponStats>();
         player.transform.localScale = new Vector3(1, 1, 1);
     }
 
@@ -36,8 +36,8 @@ public class WeaponController : MonoBehaviour
         
         if(player.stats.hp <= 0)
             Despawn();
-        
-        AttackAnimation();
+        if(canAttack)
+            AttackAnimation();
     }
 
     private void Rotation()
@@ -78,11 +78,11 @@ public class WeaponController : MonoBehaviour
         {
             if(countdown == 0) anim.SetBool("Attack", true);
         }
-        if(this.GetComponent<WeaponStats>().multishoot && !Input.GetButton("Fire1"))
+        if(stats.multishoot && !Input.GetButton("Fire1"))
             anim.SetBool("Attack", false);
     }
 
-    private void AttackAnimOff()
+    public void AttackAnimOff()
     {
         anim.SetBool("Attack", false);
         countdown = 1 / stats.atkSpeed;

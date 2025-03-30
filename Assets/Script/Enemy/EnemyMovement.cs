@@ -15,6 +15,7 @@ public class EnemyMovement : MonoBehaviour
     
     public Animator anim;
     public float cooldown;
+    public bool canMove;
     
     // Start is called before the first frame update
     void Start()
@@ -34,11 +35,14 @@ public class EnemyMovement : MonoBehaviour
 
         if (stats.hp <= 0)
             anim.SetBool("IsDead", true);
-        
-        Movement();
-        
-        if(counter == 0)
-            Attack();
+
+        if(canMove)
+        {
+            Movement();
+
+            if (counter == 0)
+                Attack();
+        }
     }
 
     private void Movement()

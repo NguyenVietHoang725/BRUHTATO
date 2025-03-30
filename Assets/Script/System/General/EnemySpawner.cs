@@ -7,8 +7,10 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] enemyPrefab;
     [SerializeField] private GameObject buffPanel;
+    [SerializeField] private PlayerController player;
 
     public int min, max, enemyAmount, lvl = 1;
+    public bool canSpawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,18 +20,17 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.position = GameObject.FindWithTag("Player").GetComponent<Transform>().position;
+        this.transform.position = player.gameObject.GetComponent<Transform>().position;
         
         if (enemyAmount > 0)
         {
             SpawnEnemy();
             enemyAmount--;
-            Debug.Log(enemyAmount);
         }
         if(!GameObject.FindWithTag("Enemy"))
         {
             buffPanel.SetActive(true);
-            Time.timeScale = 0;
+            canSpawn = false;
             lvl++;
             enemyAmount = Random.Range(min + lvl, max + lvl);
         }
@@ -37,7 +38,11 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        int element = Random.Range(0, enemyPrefab.Length);
-        GameObject newEnemy = Instantiate(enemyPrefab[element], new Vector3(Random.Range(-7,7), Random.Range(-7,7),0), Quaternion.identity);
+        if(canSpawn)
+        {
+            int element = Random.Range(0, enemyPrefab.Length);
+            GameObject newEnemy = Instantiate(enemyPrefab[element],
+                new Vector3(Random.Range(-7, 7), Random.Range(-7, 7), 0), Quaternion.identity);
+        }
     }
 }

@@ -6,17 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    [SerializeField] private GameObject syncPanel;
-    private void Awake()
-    {
-        if (!PlayerPrefs.HasKey("PlayerID"))
-        {
-            syncPanel.SetActive(true);
-        }
-    }
-
     public void StoryMode()
     {
+        PlayerPrefs.SetString("PlayerID", "PlayerX00");
+        Debug.Log(PlayerPrefs.GetString("PlayerID"));
         return;
     }
 

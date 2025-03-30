@@ -43,7 +43,7 @@ MonoBehaviour:
   Description: A simple M416 Assault Rifle.
   Price: 200
   Icon: {fileID: -1608231947, guid: 891d87cf39303b3468374dbb93e03e64, type: 3}
-  Prefab: {fileID: 1805543031143553956, guid: 574218e33c44e8a4289b9163cd3b884c, type: 3}
+  Prefab: {fileID: 6628385384293166334, guid: 8a03dd189b820354a9fcbac34bb1e935, type: 3}
   ForcePrefabDropQuantity: 0
   PrefabDropQuantity: 1
   DropProperties:

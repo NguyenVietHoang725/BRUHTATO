@@ -220,6 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 8807780522607158001}
   vcam: {fileID: 0}
+  canMove: 1
 --- !u!114 &3432984468695989038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,7 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c01e7396a946fe429ef7fd91eb3dd22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerID: Player1
+  PlayerID: PlayerX00
 --- !u!114 &6188372285324439348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,6 +246,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 343c94e0c8fd410408c3bd8cb7fe38dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerID: Player1
+  PlayerID: PlayerX00
   WeaponInventory: {fileID: 0}
   WeaponDisplay: {fileID: 0}

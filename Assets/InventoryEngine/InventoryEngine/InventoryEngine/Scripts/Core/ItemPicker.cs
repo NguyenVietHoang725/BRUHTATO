@@ -30,6 +30,9 @@ namespace MoreMountains.InventoryEngine
 		/// if you set this to true, the object will be disabled when picked
 		[Tooltip("if you set this to true, the object will be disabled when picked")]
 		public bool DisableObjectWhenDepleted = false;
+		/// if you set this to true, the object will be disabled when picked
+		[Tooltip("if you set this to true, the object will be destroy when picked")]
+		public bool DestroyObjectWhenDepleted = false;
 		/// if this is true, this object will only be allowed to be picked by colliders with a Player tag
 		[Tooltip("if this is true, this object will only be allowed to be picked by colliders with a Player tag")]
 		public bool RequirePlayerTag = true;
@@ -153,6 +156,7 @@ namespace MoreMountains.InventoryEngine
 				RemainingQuantity = RemainingQuantity - _pickedQuantity;
 				PickSuccess();
 				DisableObjectIfNeeded();
+				DestroyObjectIfNeeded();
 			}			
 		}
 
@@ -181,6 +185,15 @@ namespace MoreMountains.InventoryEngine
 			if (DisableObjectWhenDepleted && RemainingQuantity <= 0)
 			{
 				gameObject.SetActive(false);	
+			}
+		}
+		
+		protected virtual void DestroyObjectIfNeeded()
+		{
+			// we desactivate the gameobject
+			if (DestroyObjectWhenDepleted && RemainingQuantity <= 0)
+			{
+				Destroy(gameObject);	
 			}
 		}
 

@@ -15,7 +15,6 @@ public class Bullet : MonoBehaviour
 
     private void Start()
     {
-        stats = this.GetComponent<WeaponStats>();
         playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<Stats>();
         countdown = 1 / stats.atkSpeed;
     }
@@ -26,17 +25,20 @@ public class Bullet : MonoBehaviour
             countdown -= Time.deltaTime;
         else
             countdown = 0;
-        if (countdown == 0 && playerStats.mp >= this.GetComponent<WeaponStats>().mpConsume)
+        if (stats.rechargable && Input.GetButtonUp("Fire1"))
         {
-            if(this.GetComponent<WeaponStats>().rechargable && Input.GetButtonUp("Fire1")) BulletSpawn();
+            BulletSpawn();
         }
     }
 
     void BulletSpawn()
     {
-        var bullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
-        bullet.GetComponent<Rigidbody2D>().velocity = spawnPoint.right * speed;
-        playerStats.mp -= this.GetComponent<WeaponStats>().mpConsume;
-        countdown = 1 / stats.atkSpeed;
+        if(stats.mpConsume <= playerStats.mp)
+        {
+            var bullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
+            bullet.GetComponent<Rigidbody2D>().velocity = spawnPoint.right * speed;
+            playerStats.mp -= stats.mpConsume;
+            countdown = 1 / stats.atkSpeed;
+        }
     }
 }

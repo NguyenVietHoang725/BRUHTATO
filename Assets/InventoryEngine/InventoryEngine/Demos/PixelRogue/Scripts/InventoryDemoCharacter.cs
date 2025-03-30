@@ -22,11 +22,6 @@ namespace MoreMountains.InventoryEngine
 
 		public InventoryDisplay WeaponDisplay;
 
-		private void Awake()
-		{
-			PlayerID = PlayerPrefs.GetString("PlayerID");
-		}
-
 		/// <summary>
 		/// Sets the current weapon sprite
 		/// </summary>

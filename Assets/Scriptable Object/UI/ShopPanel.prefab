@@ -120,6 +120,7 @@ MonoBehaviour:
   itemDescription: {fileID: 1296674905754036250, guid: 0cc4096cbcf4c0f47a5516e15962be44, type: 3}
   itemPrice: {fileID: 0}
   itemImage: {fileID: 0}
+  descriptionPanel: {fileID: 0}
 --- !u!114 &7997287374794309877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,7 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   content:
-  - {fileID: 11400000, guid: 2ee9c3fb504d5404d9b70e3afc9c4be1, type: 2}
+  - {fileID: 11400000, guid: bb7ef7194debf944698388533448f20d, type: 2}
   - {fileID: 11400000, guid: 6c6138afbb841c745b1efe663d897611, type: 2}
   - {fileID: 11400000, guid: 91925c5aeba41e342b634f164226ad71, type: 2}
   - {fileID: 11400000, guid: c615cec15e1dfd0419f061ca96bf35e9, type: 2}
@@ -157,3 +158,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  coinInventory: {fileID: 0}
+  mainInventory: {fileID: 0}
+  buyButton: {fileID: 0}

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4829572fcd2f98479c803ffaf809268, type: 3}
-  m_Name: Sword001
+  m_Name: Sword
   m_EditorClassIdentifier: 
-  ItemID: Sword001
+  ItemID: Sword
   TargetInventoryName: RogueMainInventory
   ForceSlotIndex: 0
   TargetIndex: 0

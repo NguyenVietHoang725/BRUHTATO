@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4829572fcd2f98479c803ffaf809268, type: 3}
-  m_Name: Bow001
+  m_Name: OldBow
   m_EditorClassIdentifier: 
-  ItemID: Bow001
+  ItemID: OldBow
   TargetInventoryName: RogueMainInventory
   ForceSlotIndex: 0
   TargetIndex: 0
@@ -38,9 +38,9 @@ MonoBehaviour:
     AllowEquipShortcut: 1
     AllowUseShortcut: 1
   Quantity: 1
-  ItemName: Bow
-  ShortDescription: An old bow
-  Description: 'An old '
+  ItemName: Old Bow
+  ShortDescription: An old bow.
+  Description: An old wooden bow.
   Price: 200
   Icon: {fileID: 1650179711, guid: 9df8c6ff4d329924b936169bd61da614, type: 3}
   Prefab: {fileID: 7077186332767994831, guid: 1d35795dfe008ac4f9ee854be9ae205c, type: 3}

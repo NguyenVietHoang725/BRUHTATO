@@ -79,11 +79,6 @@ namespace MoreMountains.InventoryEngine
 			}
 		}
 
-		private void Awake()
-		{
-			PlayerID = PlayerPrefs.GetString("PlayerID");
-		}
-
 		/// <summary>
 		/// Starts the display coroutine or the panel's fade depending on whether or not the current slot is empty
 		/// </summary>

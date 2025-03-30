@@ -138,7 +138,6 @@ namespace MoreMountains.InventoryEngine
 		/// </summary>
 		protected virtual void Awake()
 		{
-			PlayerID = PlayerPrefs.GetString("PlayerID");
 			RegisterInventory();
 		}
 
@@ -613,6 +612,7 @@ namespace MoreMountains.InventoryEngine
 	    string json = JsonUtility.ToJson(serializedInventory);
 	    PlayerPrefs.SetString(DetermineSaveName(), json);
 	    PlayerPrefs.Save();
+	    Debug.Log(json);
     }
 
     public virtual void LoadSavedInventory()
@@ -701,6 +701,7 @@ namespace MoreMountains.InventoryEngine
 		public virtual void ResetSavedInventory()
 		{
 			PlayerPrefs.DeleteKey(DetermineSaveName());
+			Debug.Log(PlayerPrefs.GetString(DetermineSaveName()));
 			Debug.LogFormat("Inventory save file deleted");
 		}
 

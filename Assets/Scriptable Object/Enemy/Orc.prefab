@@ -198,6 +198,7 @@ MonoBehaviour:
   coinDropRate: 3
   anim: {fileID: 0}
   cooldown: 1
+  canMove: 1
 --- !u!95 &1439554793618833322
 Animator:
   serializedVersion: 5

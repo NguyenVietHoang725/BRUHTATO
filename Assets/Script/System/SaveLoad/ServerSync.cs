@@ -6,22 +6,25 @@ using UnityEngine.Networking;
 
 public class ServerSync : MonoBehaviour
 {
-    [SerializeField] private string serverBaseUrl = "https://yourserver.com/api/inventory"; // URL cơ sở của server
+    [SerializeField] private string serverBaseUrl = "http://localhost:3000/api/inventory"; // URL cơ sở của server
     [SerializeField] private string inventorySaveName = "MainInventorySavePlayerX00";
-    [SerializeField] private bool useEncryption = false; // Tùy chọn sử dụng mã hóa // Định danh duy nhất của người chơi
+    [SerializeField] private bool useEncryption = false; // Tùy chọn sử dụng mã hóa
     [SerializeField] private string playerID;
 
     private void Awake()
     {
         if(PlayerPrefs.HasKey("PlayerID"))
             playerID = PlayerPrefs.GetString("PlayerID");
+        Debug.Log(playerID + "\n" + serverBaseUrl);
     }
 
     public void SetPlayerID(string PlayerID)
     {
         this.playerID = PlayerID;
         PlayerPrefs.SetString("PlayerID", PlayerID);
-        Debug.Log("Player ID: " + playerID);
+        PlayerPrefs.Save();
+        if(PlayerPrefs.HasKey("PlayerID"))
+            Debug.Log("Player ID: " + PlayerID);
     }
 
     // Lưu dữ liệu lên server tại endpoint /save
@@ -34,7 +37,7 @@ public class ServerSync : MonoBehaviour
         // Tạo JSON object chứa dữ liệu và playerID
         ServerData dataToSend = new ServerData()
         {
-            playerID = PlayerPrefs.GetString("PlayerID"), // Thêm playerID vào dữ liệu gửi lên server
+            playerID = this.playerID, // Thêm playerID vào dữ liệu gửi lên server
             inventory = useEncryption ? EncryptData(inventoryData) : inventoryData // Mã hóa nếu cần
         };
 
@@ -43,6 +46,7 @@ public class ServerSync : MonoBehaviour
 
         // Gửi dữ liệu lên server tại endpoint /save
         string saveUrl = serverBaseUrl + "/save";
+        Debug.Log(saveUrl);
         StartCoroutine(PostRequest(saveUrl, jsonData));
     }
 
@@ -51,6 +55,7 @@ public class ServerSync : MonoBehaviour
     {
         // Gửi playerID để tải dữ liệu cụ thể của người chơi
         string loadUrl = serverBaseUrl + "/load?playerID=" + playerID;
+        Debug.Log(loadUrl);
         StartCoroutine(GetRequest(loadUrl));
     }
 
@@ -101,6 +106,7 @@ public class ServerSync : MonoBehaviour
                 string jsonData = request.downloadHandler.text;
                 Debug.Log("Data sync from server: " + jsonData);
                 ServerData serverData = JsonUtility.FromJson<ServerData>(jsonData);
+                Debug.Log(JsonUtility.ToJson(serverData));
 
                 // Kiểm tra tính hợp lệ của dữ liệu trước khi ghi đè
                 if (!string.IsNullOrEmpty(serverData.inventory))

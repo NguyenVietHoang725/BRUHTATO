@@ -103,7 +103,8 @@ MonoBehaviour:
   Quantity: 200
   RemainingQuantity: 1
   PickableIfInventoryIsFull: 0
-  DisableObjectWhenDepleted: 1
+  DisableObjectWhenDepleted: 0
+  DestroyObjectWhenDepleted: 1
   RequirePlayerTag: 1
 --- !u!61 &8315358785237152633
 BoxCollider2D:

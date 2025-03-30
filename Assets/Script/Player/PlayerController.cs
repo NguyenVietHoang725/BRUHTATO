@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
+using MoreMountains.Tools;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
@@ -15,6 +16,8 @@ public class PlayerController : MonoBehaviour
     public CinemachineVirtualCamera vcam;
     
     private Vector3 movement;
+    
+    public bool canMove;
 
     private void Start()
     {
@@ -26,7 +29,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        Movement();
+        if(canMove)
+            Movement();
         if (stats.hp <= 0)
             anim.SetBool("IsDead", true);
     }
@@ -45,7 +49,14 @@ public class PlayerController : MonoBehaviour
 
     private void Death()
     {
-        this.gameObject.SetActive(false);
+        MMGameEvent.Trigger("Save");
+        StartCoroutine(ChangeScene());
+    }
+
+    private IEnumerator ChangeScene()
+    {
+        //this.gameObject.SetActive(false);
+        yield return new WaitForSeconds(0.2f);
         SceneManager.LoadScene(1);
     }
 }

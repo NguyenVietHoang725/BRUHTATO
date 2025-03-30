@@ -132,9 +132,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1a4bd107a7626d4b8e28c70164449b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 1
   player: {fileID: 0}
+  stats: {fileID: 5501106342171401459}
   anim: {fileID: 6645490217930345951}
+  angle: 0
+  canAttack: 1
 --- !u!114 &7442730326246136205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,6 +152,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 2196727355253767679}
   bulletPrefab: {fileID: 7963867342419216267, guid: 8dd8007a99277ca4db8aa066dc44f91f, type: 3}
   speed: 15
+  stats: {fileID: 5501106342171401459}
   playerStats: {fileID: 0}
 --- !u!114 &5501106342171401459
 MonoBehaviour:
@@ -163,15 +166,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4acd3efc3dcc7854c9eaad18077233ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 0
-  maxMp: 0
   atk: 2
   mpConsume: 2
-  speed: 0
   atkSpeed: 2.5
   critRate: 0
-  critDmg: 0
-  CD: 0
   rechargable: 0
   multishoot: 1
   player: {fileID: 0}
