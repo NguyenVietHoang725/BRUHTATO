@@ -7,15 +7,19 @@ using UnityEngine.Networking;
 public class ServerSync : MonoBehaviour
 {
     [SerializeField] private string serverBaseUrl = "http://localhost:3000/api/inventory"; // URL cơ sở của server
-    [SerializeField] private string inventorySaveName = "MainInventorySavePlayerX00";
+    [SerializeField] private string inventorySaveName = "MainInventorySave";
     [SerializeField] private bool useEncryption = false; // Tùy chọn sử dụng mã hóa
     [SerializeField] private string playerID;
 
     private void Awake()
     {
-        if(PlayerPrefs.HasKey("PlayerID"))
-            playerID = PlayerPrefs.GetString("PlayerID");
-        Debug.Log(playerID + "\n" + serverBaseUrl);
+        if(!PlayerPrefs.HasKey("PlayerID"))
+        {
+            PlayerPrefs.SetString("PlayerID", "PlayerX00");
+            PlayerPrefs.Save();
+        }
+        playerID = PlayerPrefs.GetString("PlayerID");
+        Debug.Log(playerID);
     }
 
     public void SetPlayerID(string PlayerID)
@@ -31,7 +35,7 @@ public class ServerSync : MonoBehaviour
     public void SaveDataToServer()
     {
         // Lấy dữ liệu từ PlayerPrefs
-        string inventoryData = PlayerPrefs.GetString(inventorySaveName);
+        string inventoryData = PlayerPrefs.GetString(inventorySaveName + playerID);
         Debug.Log("Data in PlayerPrefs: " + inventoryData);
 
         // Tạo JSON object chứa dữ liệu và playerID
@@ -114,7 +118,7 @@ public class ServerSync : MonoBehaviour
                     string inventoryData = useEncryption ? DecryptData(serverData.inventory) : serverData.inventory; // Giải mã nếu cần
                     Debug.Log("Data after parse: " + inventoryData);
 
-                    PlayerPrefs.SetString(inventorySaveName, inventoryData);
+                    PlayerPrefs.SetString(inventorySaveName + playerID, inventoryData);
                     PlayerPrefs.Save();
                     Debug.Log("Data loaded from server successfully!");
                 }

@@ -132,9 +132,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 7801904705574098944}
   bulletPrefab: {fileID: 5282715800456191217, guid: c77a13d4c16e9b0498fe9d0b11bc70bc, type: 3}
-  speed: 15
+  speed: 10
   stats: {fileID: 3461311735849643519}
   playerStats: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!95 &1324653280341250070
 Animator:
   serializedVersion: 5
@@ -202,11 +203,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1a4bd107a7626d4b8e28c70164449b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  countdown: 0
   player: {fileID: 0}
   stats: {fileID: 3461311735849643519}
   anim: {fileID: 1324653280341250070}
   angle: 0
-  canAttack: 1
 --- !u!114 &3461311735849643519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,10 +220,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4acd3efc3dcc7854c9eaad18077233ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  atk: 4
-  mpConsume: 3
-  atkSpeed: 0.3
+  atk: 5
+  mpConsume: 2
+  atkSpeed: 0
   critRate: 0
   rechargable: 1
   multishoot: 1
+  rarity: Common
   player: {fileID: 0}

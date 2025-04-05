@@ -20,7 +20,7 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.position = player.gameObject.GetComponent<Transform>().position;
+        this.transform.position = player.transform.position;
         
         if (enemyAmount > 0)
         {
@@ -31,9 +31,15 @@ public class EnemySpawner : MonoBehaviour
         {
             buffPanel.SetActive(true);
             canSpawn = false;
-            lvl++;
-            enemyAmount = Random.Range(min + lvl, max + lvl);
+            player.canMove = false;
+            player.canAttack = false;
         }
+    }
+
+    public void SetAmount()
+    {
+        lvl++;
+        enemyAmount = Random.Range(min + lvl, max + lvl);
     }
 
     private void SpawnEnemy()

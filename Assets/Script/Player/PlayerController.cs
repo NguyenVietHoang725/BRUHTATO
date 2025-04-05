@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
+using MoreMountains.InventoryEngine;
 using MoreMountains.Tools;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -16,11 +17,14 @@ public class PlayerController : MonoBehaviour
     public CinemachineVirtualCamera vcam;
     
     private Vector3 movement;
+    private InventoryInputManager inventoryInputManager;
     
-    public bool canMove;
+    public bool canMove = true;
+    public bool canAttack = true;
 
     private void Start()
     {
+        inventoryInputManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryInputManager>();
         vcam = GameObject.FindGameObjectWithTag("Vcam").GetComponent<CinemachineVirtualCamera>();
         vcam.Follow = this.transform;
         rb = this.GetComponent<Rigidbody2D>();
@@ -29,6 +33,14 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if(inventoryInputManager != null)
+        {
+            if (!inventoryInputManager.InventoryIsOpen)
+                canAttack = canMove = true;
+            else
+                canAttack = canMove = false;
+        }
+        
         if(canMove)
             Movement();
         if (stats.hp <= 0)
@@ -49,14 +61,6 @@ public class PlayerController : MonoBehaviour
 
     private void Death()
     {
-        MMGameEvent.Trigger("Save");
-        StartCoroutine(ChangeScene());
-    }
-
-    private IEnumerator ChangeScene()
-    {
-        //this.gameObject.SetActive(false);
-        yield return new WaitForSeconds(0.2f);
-        SceneManager.LoadScene(1);
+        this.gameObject.SetActive(false);
     }
 }

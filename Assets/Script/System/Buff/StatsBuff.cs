@@ -11,10 +11,12 @@ public class StatsBuff : MonoBehaviour
     [SerializeField] private Stats stats;
     [SerializeField] private float buffValue;
     [SerializeField] private TextMeshProUGUI descriptionText;
+    [SerializeField] private EnemySpawner enemySpawner;
 
     private void Start()
     {
-        stats = GameObject.FindGameObjectWithTag("Player").GetComponent<Stats>();  
+        stats = GameObject.FindGameObjectWithTag("Player").GetComponent<Stats>();
+        enemySpawner = GameObject.Find("EnemySpawner").GetComponent<EnemySpawner>();
         if (hp) descriptionText.text += "MaxHP + " + (buffValue * 100) + "%\n";
 
         if (mp) descriptionText.text += "MaxMP + " + (buffValue * 100) + "%\n";
@@ -63,7 +65,16 @@ public class StatsBuff : MonoBehaviour
 
     public void TurnOffPanel()
     {
-        Time.timeScale = 1.0f;
+        StartCoroutine(TurnOffPanelCoroutine());
+    }
+
+    private IEnumerator TurnOffPanelCoroutine()
+    {
+        yield return new WaitForSeconds(0.2f);
+        enemySpawner.canSpawn = true;
+        enemySpawner.SetAmount();
+        stats.gameObject.GetComponent<PlayerController>().canMove = true;
+        stats.gameObject.GetComponent<PlayerController>().canAttack = true;
         this.transform.parent.gameObject.SetActive(false);
     }
 }

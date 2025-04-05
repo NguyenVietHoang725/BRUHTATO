@@ -34,7 +34,13 @@ public class EnemyMovement : MonoBehaviour
         else counter = 0;
 
         if (stats.hp <= 0)
+        {
+            canMove = false;
             anim.SetBool("IsDead", true);
+        }
+
+        if (!target.gameObject.activeSelf)
+            canMove = false;
 
         if(canMove)
         {

@@ -41,7 +41,7 @@ public class Stats : MonoBehaviour
 
         shieldRegenCoroutine = StartCoroutine(RegenShieldAfterDelay());
     }
-    
+
     private IEnumerator RegenShieldAfterDelay()
     {
         yield return new WaitForSeconds(shieldRegenDelay);

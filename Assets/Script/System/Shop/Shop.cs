@@ -17,7 +17,12 @@ public class Shop : NPCController
         if (Input.GetButtonDown("Interact") && stayCheck)
         {
             shopPanel.SetActive(true);
+            GameObject.FindWithTag("Player").GetComponent<PlayerController>().canAttack = false;
         }
-        if(!stayCheck) shopPanel.SetActive(false);
+        if(!stayCheck)
+        {
+            shopPanel.SetActive(false);
+            GameObject.FindWithTag("Player").GetComponent<PlayerController>().canAttack = true;
+        }
     }
 }

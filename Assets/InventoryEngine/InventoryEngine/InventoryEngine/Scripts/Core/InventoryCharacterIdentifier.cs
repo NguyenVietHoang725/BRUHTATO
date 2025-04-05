@@ -11,5 +11,9 @@ namespace MoreMountains.InventoryEngine
 		/// the unique ID of the player
 		public string PlayerID = "PlayerX00";
 
+		private void Awake()
+		{
+			PlayerID = PlayerPrefs.GetString("PlayerID");
+		}
 	}    
 }

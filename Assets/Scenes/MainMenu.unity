@@ -603,6 +603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74c4f1efc3cd7854691143d42e783937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncButton: {fileID: 828009526}
 --- !u!114 &627781164
 MonoBehaviour:
   m_ObjectHideFlags: 0

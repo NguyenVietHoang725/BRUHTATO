@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 4899883203951892968}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: -0.06, z: 0}
+  m_LocalPosition: {x: 0.85, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41,8 +41,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1538528633405765274}
   - component: {fileID: 4873114687630875627}
-  - component: {fileID: 820849874551654220}
   - component: {fileID: 7442730326246136205}
+  - component: {fileID: 820849874551654220}
   - component: {fileID: 5501106342171401459}
   - component: {fileID: 6645490217930345951}
   m_Layer: 0
@@ -120,23 +120,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &820849874551654220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6628385384293166334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1a4bd107a7626d4b8e28c70164449b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  stats: {fileID: 5501106342171401459}
-  anim: {fileID: 6645490217930345951}
-  angle: 0
-  canAttack: 1
 --- !u!114 &7442730326246136205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,9 +134,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 2196727355253767679}
   bulletPrefab: {fileID: 7963867342419216267, guid: 8dd8007a99277ca4db8aa066dc44f91f, type: 3}
-  speed: 15
+  speed: 10
   stats: {fileID: 5501106342171401459}
   playerStats: {fileID: 0}
+  anim: {fileID: 0}
+--- !u!114 &820849874551654220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6628385384293166334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a4bd107a7626d4b8e28c70164449b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countdown: 0
+  player: {fileID: 0}
+  stats: {fileID: 5501106342171401459}
+  anim: {fileID: 6645490217930345951}
+  angle: 0
 --- !u!114 &5501106342171401459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,12 +167,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4acd3efc3dcc7854c9eaad18077233ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  atk: 2
+  atk: 3
   mpConsume: 2
-  atkSpeed: 2.5
+  atkSpeed: 0
   critRate: 0
   rechargable: 0
   multishoot: 1
+  rarity: Rare
   player: {fileID: 0}
 --- !u!95 &6645490217930345951
 Animator:

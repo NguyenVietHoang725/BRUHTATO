@@ -48,7 +48,7 @@ public class ShopDisplay : MonoBehaviour
                 itemButtons[item] = button;
 
                 // Kiểm tra nếu item đã mua trước đó thì vô hiệu hóa slot
-                if (PlayerPrefs.GetInt("Purchased_" + item.ItemID, 0) == 1)
+                if (PlayerPrefs.GetInt("PurchasedIn" + PlayerPrefs.GetString("PlayerID") + item.ItemID, 0) == 1)
                 {
                     button.interactable = false;
                 }
@@ -93,7 +93,7 @@ public class ShopDisplay : MonoBehaviour
     {
         foreach (InventoryItem item in shopManager.content)
         {
-            if (item != null && PlayerPrefs.GetInt("Purchased_" + item.ItemID, 0) == 1)
+            if (item != null && PlayerPrefs.GetInt("PurchasedIn" + PlayerPrefs.GetString("PlayerID") + item.ItemID, 0) == 1)
             {
                 if (itemButtons.ContainsKey(item))
                 {

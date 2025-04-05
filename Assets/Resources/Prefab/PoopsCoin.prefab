@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Item: {fileID: 11400000, guid: bdbe3d9fe98f0fa46b488de730cfeb6a, type: 2}
-  Quantity: 200
+  Quantity: 8
   RemainingQuantity: 1
   PickableIfInventoryIsFull: 0
   DisableObjectWhenDepleted: 0

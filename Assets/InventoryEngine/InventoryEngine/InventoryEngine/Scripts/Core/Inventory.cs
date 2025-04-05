@@ -138,6 +138,7 @@ namespace MoreMountains.InventoryEngine
 		/// </summary>
 		protected virtual void Awake()
 		{
+			PlayerID = PlayerPrefs.GetString("PlayerID");
 			RegisterInventory();
 		}
 

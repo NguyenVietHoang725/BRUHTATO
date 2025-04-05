@@ -100,11 +100,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1a4bd107a7626d4b8e28c70164449b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  countdown: 0
   player: {fileID: 0}
   stats: {fileID: 6753200422347728911}
   anim: {fileID: 1643535335182590656}
   angle: 0
-  canAttack: 1
 --- !u!114 &6753200422347728911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,6 +123,7 @@ MonoBehaviour:
   critRate: 0
   rechargable: 0
   multishoot: 0
+  rarity: Common
   player: {fileID: 0}
 --- !u!95 &1643535335182590656
 Animator:

@@ -57,6 +57,11 @@ namespace MoreMountains.InventoryEngine
 		protected float _fadeDelay=0.2f;
 		protected CanvasGroup _canvasGroup;
 
+		private void Awake()
+		{
+			PlayerID = PlayerPrefs.GetString("PlayerID");
+		}
+
 		/// <summary>
 		/// On Start, we grab and store the canvas group and determine our current Hidden status
 		/// </summary>

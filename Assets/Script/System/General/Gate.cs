@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class Gate : MonoBehaviour
 {
     [SerializeField] private int scene;
+    [SerializeField] private PlayerController player;
 
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -15,6 +16,11 @@ public class Gate : MonoBehaviour
         {
             ChangeScene();
         }
+    }
+
+    private void Update()
+    {
+        if(player && !player.gameObject.activeSelf) ChangeScene();
     }
 
     public void ChangeScene()

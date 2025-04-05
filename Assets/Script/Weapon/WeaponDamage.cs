@@ -28,4 +28,9 @@ public class WeaponDamage : MonoBehaviour
             collider.gameObject.GetComponent<EnemyStats>().hp -= (int)damage;
         }
     }
+
+    private void SetAnim()
+    {
+        this.GetComponent<Animator>().SetTrigger("Fly");
+    }
 }

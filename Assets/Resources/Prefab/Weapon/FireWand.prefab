@@ -101,11 +101,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1a4bd107a7626d4b8e28c70164449b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  countdown: 0
   player: {fileID: 0}
   stats: {fileID: 3983291093249966347}
   anim: {fileID: 3072058737720678974}
   angle: 0
-  canAttack: 1
 --- !u!114 &3983291093249966347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,12 +118,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4acd3efc3dcc7854c9eaad18077233ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  atk: 3
-  mpConsume: 0
+  atk: 5
+  mpConsume: 3
   atkSpeed: 0.2
-  critRate: 0
+  critRate: 0.4
   rechargable: 0
-  multishoot: 1
+  multishoot: 0
+  rarity: Rare
   player: {fileID: 0}
 --- !u!114 &1336531333926452692
 MonoBehaviour:
@@ -142,6 +143,7 @@ MonoBehaviour:
   speed: 5
   stats: {fileID: 3983291093249966347}
   playerStats: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!95 &3072058737720678974
 Animator:
   serializedVersion: 5

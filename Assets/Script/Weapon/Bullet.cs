@@ -10,6 +10,7 @@ public class Bullet : MonoBehaviour
     public float speed;
     [SerializeField] private WeaponStats stats;
     [SerializeField] private Stats playerStats;
+    [SerializeField] private Animator anim;
     
     private float countdown;
 
@@ -25,13 +26,27 @@ public class Bullet : MonoBehaviour
             countdown -= Time.deltaTime;
         else
             countdown = 0;
-        if (stats.rechargable && Input.GetButtonUp("Fire1"))
+        if (stats.rechargable && Input.GetButtonUp("Fire1") && IsAnimationFinished())
         {
             BulletSpawn();
         }
     }
+    
+    private bool IsAnimationFinished()
+    {
+        if (anim == null)
+            return true;
+        
+        AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
+        return stateInfo.normalizedTime >= 1 && !anim.IsInTransition(0);
+    }
 
-    void BulletSpawn()
+    private void AttackAnimOff()
+    {
+        stats.GetComponent<WeaponController>().AttackAnimOff();
+    }
+    
+    private void BulletSpawn()
     {
         if(stats.mpConsume <= playerStats.mp)
         {

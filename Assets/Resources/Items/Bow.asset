@@ -42,7 +42,7 @@ MonoBehaviour:
   ShortDescription: An wooden bow.
   Description: An wooden bow.
   Price: 200
-  Icon: {fileID: 1650179711, guid: 9df8c6ff4d329924b936169bd61da614, type: 3}
+  Icon: {fileID: 610647826, guid: 521152c13b6967447b9cd93d8657de81, type: 3}
   Prefab: {fileID: 7077186332767994831, guid: 842ea040ac1dd7c42bbd5854b6c1d4f6, type: 3}
   ForcePrefabDropQuantity: 0
   PrefabDropQuantity: 1
