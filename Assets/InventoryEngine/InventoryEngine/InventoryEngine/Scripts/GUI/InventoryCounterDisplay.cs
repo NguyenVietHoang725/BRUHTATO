@@ -77,16 +77,32 @@ namespace MoreMountains.InventoryEngine
 		/// <returns></returns>
 		public virtual bool ShouldUpdate(string inventoryName)
 		{
+			// Kiểm tra nếu TargetInventories chưa được gán hoặc là danh sách rỗng
+			if (TargetInventories == null || TargetInventories.Count == 0)
+			{
+				Debug.LogError("❌ TargetInventories bị null hoặc rỗng!");
+				return false;
+			}
+
 			bool shouldUpdate = false;
+    
 			foreach (Inventory inventory in TargetInventories)
 			{
+				if (inventory == null)
+				{
+					Debug.LogError("❌ Một Inventory trong TargetInventories bị null!");
+					continue;
+				}
+
 				if (inventory.name == inventoryName)
 				{
 					shouldUpdate = true;
 				}
 			}
+
 			return shouldUpdate;
 		}
+
 		
 		/// <summary>
 		/// On Enable, we start listening for MMInventoryEvents

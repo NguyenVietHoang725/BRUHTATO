@@ -10,12 +10,12 @@ public class Bullet : MonoBehaviour
     public float speed;
     [SerializeField] private WeaponStats stats;
     [SerializeField] private Stats playerStats;
+    [SerializeField] private Animator anim;
     
     private float countdown;
 
     private void Start()
     {
-        stats = GameObject.FindGameObjectWithTag("Weapon").GetComponent<WeaponStats>();
         playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<Stats>();
         countdown = 1 / stats.atkSpeed;
     }
@@ -26,17 +26,34 @@ public class Bullet : MonoBehaviour
             countdown -= Time.deltaTime;
         else
             countdown = 0;
-        if (countdown == 0 && playerStats.mp >= this.GetComponent<WeaponStats>().mpConsume)
+        if (stats.rechargable && Input.GetButtonUp("Fire1") && IsAnimationFinished())
         {
-            if(this.GetComponent<WeaponStats>().rechargable && Input.GetButtonUp("Fire1")) BulletSpawn();
+            BulletSpawn();
         }
     }
-
-    void BulletSpawn()
+    
+    private bool IsAnimationFinished()
     {
-        var bullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
-        bullet.GetComponent<Rigidbody2D>().velocity = spawnPoint.right * speed;
-        playerStats.mp -= this.GetComponent<WeaponStats>().mpConsume;
-        countdown = 1 / stats.atkSpeed;
+        if (anim == null)
+            return true;
+        
+        AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
+        return stateInfo.normalizedTime >= 1 && !anim.IsInTransition(0);
+    }
+
+    private void AttackAnimOff()
+    {
+        stats.GetComponent<WeaponController>().AttackAnimOff();
+    }
+    
+    private void BulletSpawn()
+    {
+        if(stats.mpConsume <= playerStats.mp)
+        {
+            var bullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
+            bullet.GetComponent<Rigidbody2D>().velocity = spawnPoint.right * speed;
+            playerStats.mp -= stats.mpConsume;
+            countdown = 1 / stats.atkSpeed;
+        }
     }
 }

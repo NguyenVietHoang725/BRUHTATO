@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 321254cf42ce7254d879e33a58692e73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 14
+  maxHp: 10
   hp: 0
   atk: 1
   level: 1
@@ -194,8 +194,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ManaOrb: {fileID: 7456949383597425095, guid: 51c8bbcaceed5784cb6fda448f3540a2, type: 3}
+  coin: {fileID: 4802903661538791190, guid: 69a9250ba9a93144991303e5e66d3598, type: 3}
+  coinDropRate: 3
   anim: {fileID: 0}
   cooldown: 1
+  canMove: 1
 --- !u!95 &1439554793618833322
 Animator:
   serializedVersion: 5

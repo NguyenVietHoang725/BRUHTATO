@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ed137f6-678d-44bf-baa4-c2db03f637c1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/Items/HealthBonusItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/Items/HealthBonusItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyMovement.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/Orc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/Orc.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/BlankWeapon.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/BlankWeapon.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/Blaze Buckshot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/Blaze Buckshot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/Sword.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/Sword.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Event1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Event1.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +22,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemy/EnemyDamage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/System/ManaOrb.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/CharacterManagement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/System/Buff/StatsBuff.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/System/Shop/ShopDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/System/Shop/ShopManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/StarterWeapon.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -37,29 +39,23 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\death\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\death\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\death\\AppData\\Local\\Symbols\\src"
-    ]
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Han&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.37f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\Unity Hub\2022.3.37f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;E:\Unity Project\Bruhtato&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\Unity Project\Bruhtato" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -67,7 +63,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.37f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\Unity Hub\2022.3.37f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;E:\Unity Project\Bruhtato&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\Unity Project\Bruhtato" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -128,6 +124,51 @@
       <workItem from="1737687268992" duration="2756000" />
       <workItem from="1739724654240" duration="592000" />
       <workItem from="1740372445821" duration="3294000" />
+      <workItem from="1741143021602" duration="2519000" />
+      <workItem from="1741282648495" duration="720000" />
+      <workItem from="1741325580638" duration="10637000" />
+      <workItem from="1741452936256" duration="2769000" />
+      <workItem from="1741459087610" duration="659000" />
+      <workItem from="1741462170162" duration="286000" />
+      <workItem from="1741489152454" duration="1887000" />
+      <workItem from="1741503264606" duration="9784000" />
+      <workItem from="1741536472067" duration="11655000" />
+      <workItem from="1741712077905" duration="9453000" />
+      <workItem from="1741886129686" duration="5801000" />
+      <workItem from="1741929222824" duration="1709000" />
+      <workItem from="1742010410928" duration="1227000" />
+      <workItem from="1742095285753" duration="3421000" />
+      <workItem from="1742141787566" duration="5528000" />
+      <workItem from="1742295953538" duration="5219000" />
+      <workItem from="1742349870386" duration="7086000" />
+      <workItem from="1742488412760" duration="4489000" />
+      <workItem from="1742493415150" duration="120000" />
+      <workItem from="1742493628061" duration="1178000" />
+      <workItem from="1742580661962" duration="2186000" />
+      <workItem from="1742582927435" duration="1526000" />
+      <workItem from="1742612008816" duration="8622000" />
+      <workItem from="1742699261368" duration="2966000" />
+      <workItem from="1742781892647" duration="6180000" />
+      <workItem from="1742827525811" duration="1779000" />
+      <workItem from="1742923558299" duration="5613000" />
+      <workItem from="1742957786100" duration="9202000" />
+      <workItem from="1743006726402" duration="2548000" />
+      <workItem from="1743012413609" duration="1007000" />
+      <workItem from="1743043466050" duration="232000" />
+      <workItem from="1743053398806" duration="4276000" />
+      <workItem from="1743095848912" duration="692000" />
+      <workItem from="1743096638268" duration="1771000" />
+      <workItem from="1743178753578" duration="4560000" />
+      <workItem from="1743214200385" duration="1034000" />
+      <workItem from="1743226043297" duration="6580000" />
+      <workItem from="1743356263268" duration="3406000" />
+      <workItem from="1743423281983" duration="1968000" />
+      <workItem from="1743528505418" duration="2909000" />
+      <workItem from="1743563584306" duration="3450000" />
+      <workItem from="1743613021118" duration="3625000" />
+      <workItem from="1743699563901" duration="2563000" />
+      <workItem from="1743872386772" duration="5033000" />
+      <workItem from="1743994242695" duration="2464000" />
     </task>
     <servers />
   </component>
@@ -142,6 +183,7 @@
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

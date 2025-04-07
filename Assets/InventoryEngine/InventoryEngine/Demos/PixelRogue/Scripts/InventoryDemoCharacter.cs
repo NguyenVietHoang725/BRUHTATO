@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 using MoreMountains.Tools;
 
@@ -15,122 +16,15 @@ namespace MoreMountains.InventoryEngine
 			"A very basic demo character controller, that makes the character move around on the xy axis. Here you can change its speed and bind sprites and equipment inventories.",
 			MMInformationAttribute.InformationType.Info, false)]
 
-		public string PlayerID = "Player1";
-		/// the character speed
-		public float CharacterSpeed = 300f;
-		/// the sprite used to show the current weapon
-		public SpriteRenderer WeaponSprite;
-		/// the armor inventory
-		public Inventory ArmorInventory;
-		/// the weapon inventory
+		public string PlayerID = "PlayerX00";
+		/// the Weapon inventory
 		public Inventory WeaponInventory;
 
-		protected int _currentArmor=0;
-		protected int _currentWeapon=0;
-		protected float _horizontalMove = 0f;
-		protected float _verticalMove = 0f;
-		protected Vector2 _movement;
-		protected Animator _animator;
-		protected Rigidbody2D _rigidBody2D;
-		protected bool _isFacingRight = true;
+		public InventoryDisplay WeaponDisplay;
 
-		/// <summary>
-		/// On Start, we store the character's animator and rigidbody
-		/// </summary>
-		protected virtual void Start()
+		private void Awake()
 		{
-			_animator = GetComponent<Animator>();
-			_rigidBody2D = GetComponent<Rigidbody2D>();
-		}
-
-		/// <summary>
-		/// On fixed update we move the character and update its animator
-		/// </summary>
-		protected virtual void FixedUpdate()
-		{
-			Movement();
-			UpdateAnimator();
-		}
-
-		/// <summary>
-		/// Updates the character's movement values for this frame
-		/// </summary>
-		/// <param name="movementX">Movement x.</param>
-		/// <param name="movementY">Movement y.</param>
-		public virtual void SetMovement(float movementX, float movementY)
-		{
-			_horizontalMove = movementX;
-			_verticalMove = movementY;
-		}
-
-		/// <summary>
-		/// Sets the horizontal move value
-		/// </summary>
-		/// <param name="value">Value.</param>
-		public virtual void SetHorizontalMove(float value)
-		{
-			_horizontalMove = value;
-		}
-
-		/// <summary>
-		/// Sets the vertical move value
-		/// </summary>
-		/// <param name="value">Value.</param>
-		public virtual void SetVerticalMove(float value)
-		{
-			_verticalMove = value;
-		}
-
-		/// <summary>
-		/// Acts on the rigidbody's velocity to move the character based on its current horizontal and vertical values
-		/// </summary>
-		protected virtual void Movement()
-		{
-			if (_horizontalMove > 0.1f)
-			{
-				if (!_isFacingRight)
-					Flip();
-			}
-			// If it's negative, then we're facing left
-			else if (_horizontalMove < -0.1f)
-			{
-				if (_isFacingRight)
-					Flip();
-			}
-			_movement = new Vector2(_horizontalMove, _verticalMove);
-			_movement *= CharacterSpeed * Time.deltaTime;
-			_rigidBody2D.velocity = _movement;
-		}
-	    
-		/// <summary>
-		/// Flips the character and its dependencies horizontally
-		/// </summary>
-		protected virtual void Flip()
-		{
-			// Flips the character horizontally
-			transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
-			_isFacingRight = transform.localScale.x > 0;
-		}
-
-		/// <summary>
-		/// Updates the animator's parameters
-		/// </summary>
-		protected virtual void UpdateAnimator()
-		{
-			if (_animator != null)
-			{
-				_animator.SetFloat("Speed", _rigidBody2D.velocity.magnitude);
-				_animator.SetInteger("Armor", _currentArmor);
-			}
-		}
-
-		/// <summary>
-		/// Sets the current armor.
-		/// </summary>
-		/// <param name="index">Index.</param>
-		public virtual void SetArmor(int index)
-		{
-			_currentArmor = index;
+			PlayerID = PlayerPrefs.GetString("PlayerID");
 		}
 
 		/// <summary>
@@ -138,9 +32,49 @@ namespace MoreMountains.InventoryEngine
 		/// </summary>
 		/// <param name="newSprite">New sprite.</param>
 		/// <param name="item">Item.</param>
-		public virtual void SetWeapon(Sprite newSprite, InventoryItem item)
+		public virtual void SetWeapon(GameObject prefab, InventoryItem item)
 		{
-			WeaponSprite.sprite = newSprite;
+			if(item.name == WeaponInventory.Content[0].name)
+			{
+				UnSetWeapon(item);
+				GameObject newWeapon = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity);
+			}
+		}
+
+		public virtual void UnSetWeapon(InventoryItem item)
+		{
+			if(GameObject.Find("BlankWeapon")) Destroy(GameObject.Find("BlankWeapon").gameObject);
+			if(item.name == WeaponInventory.Content[0].name)
+				Destroy(GameObject.Find(WeaponInventory.Content[0].Prefab.name + "(Clone)"));
+		}
+
+		public void SetButton(int index, bool value)
+		{
+			if (WeaponInventory.Content[index])
+			{
+				WeaponInventory.Content[index].DisplayProperties.DisplayMoveButton = value;
+				WeaponInventory.Content[index].DisplayProperties.DisplayEquipButton = value;
+			}
+		}
+		
+		private void SwapWeapon()
+		{
+			UnSetWeapon(WeaponInventory.Content[0]);
+
+			InventoryItem tmpItem = null;
+			tmpItem = WeaponInventory.Content[0];
+			WeaponInventory.Content[0] = WeaponInventory.Content[1];
+			WeaponInventory.Content[1] = tmpItem;
+
+			WeaponDisplay.UpdateInventoryContent();
+			
+			SetWeapon(WeaponInventory.Content[0].Prefab,WeaponInventory.Content[0]);
+		}
+
+		private void Update()
+		{
+			if(Input.GetKeyDown(KeyCode.E) && WeaponInventory.Content[0] && WeaponInventory.Content[1])
+				SwapWeapon();
 		}
 
 		/// <summary>
@@ -151,23 +85,13 @@ namespace MoreMountains.InventoryEngine
 		{
 			if (inventoryEvent.InventoryEventType == MMInventoryEventType.InventoryLoaded)
 			{
-				if (inventoryEvent.TargetInventoryName == "RogueArmorInventory")
-				{
-					if (ArmorInventory != null)
-					{
-						if (!InventoryItem.IsNull(ArmorInventory.Content [0]))
-						{
-							ArmorInventory.Content [0].Equip (PlayerID);	
-						}
-					}
-				}
-				if (inventoryEvent.TargetInventoryName == "RogueWeaponInventory")
+				if (inventoryEvent.TargetInventoryName == WeaponInventory.name)
 				{
 					if (WeaponInventory != null)
 					{
-						if (!InventoryItem.IsNull (WeaponInventory.Content [0]))
+						if (!InventoryItem.IsNull(WeaponInventory.Content [0]))
 						{
-							WeaponInventory.Content [0].Equip (PlayerID);
+							WeaponInventory.Content [0].Equip (PlayerID);	
 						}
 					}
 				}

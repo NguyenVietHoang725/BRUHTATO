@@ -12,17 +12,17 @@ namespace MoreMountains.InventoryEngine
 	/// </summary>
 	public class WeaponItem : InventoryItem 
 	{
-		[Header("Weapon")]
-		/// the sprite to use to show the weapon when equipped
-		public Sprite WeaponSprite;
-
 		/// <summary>
 		/// What happens when the object is used 
 		/// </summary>
 		public override bool Equip(string playerID)
 		{
+			Debug.Log("Player ID: " + playerID);
 			base.Equip(playerID);
-			TargetInventory(playerID).TargetTransform.GetComponent<InventoryDemoCharacter>().SetWeapon(WeaponSprite,this);
+			TargetInventory(playerID).TargetTransform.GetComponent<InventoryDemoCharacter>().SetWeapon(Prefab,this);
+			
+			TargetInventory(playerID).TargetTransform.GetComponent<InventoryDemoCharacter>().SetButton(0, false);
+			TargetInventory(playerID).TargetTransform.GetComponent<InventoryDemoCharacter>().SetButton(1, false);
 			return true;
 		}
 
@@ -32,9 +32,11 @@ namespace MoreMountains.InventoryEngine
 		public override bool UnEquip(string playerID)
 		{
 			base.UnEquip(playerID);
-			TargetInventory(playerID).TargetTransform.GetComponent<InventoryDemoCharacter>().SetWeapon(null,this);
+			TargetInventory(playerID).TargetTransform.GetComponent<InventoryDemoCharacter>().UnSetWeapon(this);
+			
+			TargetInventory(playerID).TargetTransform.GetComponent<InventoryDemoCharacter>().SetButton(0, true);
+			TargetInventory(playerID).TargetTransform.GetComponent<InventoryDemoCharacter>().SetButton(1, true);
 			return true;
 		}
-		
 	}
 }

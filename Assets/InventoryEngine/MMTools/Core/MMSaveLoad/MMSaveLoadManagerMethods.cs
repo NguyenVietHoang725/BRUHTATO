@@ -19,7 +19,7 @@ namespace MoreMountains.Tools
 	/// <summary>
 	/// The possible methods to save and load files to and from disk available in the MMSaveLoadManager
 	/// </summary>
-	public enum MMSaveLoadManagerMethods { Json, JsonEncrypted, Binary, BinaryEncrypted };
+	public enum MMSaveLoadManagerMethods { Json, JsonEncrypted, Binary, BinaryEncrypted, Server };
 
 	/// <summary>
 	/// This class implements methods to encrypt and decrypt streams

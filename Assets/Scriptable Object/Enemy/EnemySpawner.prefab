@@ -45,7 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: []
+  buffPanel: {fileID: 0}
+  player: {fileID: 0}
   min: 0
   max: 0
   enemyAmount: 0
   lvl: 1
+  canSpawn: 1

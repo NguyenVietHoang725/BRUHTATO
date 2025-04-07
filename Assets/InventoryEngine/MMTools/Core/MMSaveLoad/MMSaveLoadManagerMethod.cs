@@ -56,6 +56,7 @@ namespace MoreMountains.Tools
 			}
 			MMSaveLoadManager.SaveLoadMethod = _saveLoadManagerMethod;
 		}
+
 	}    
 }
 

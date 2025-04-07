@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using MoreMountains.Tools;
@@ -13,7 +14,7 @@ namespace MoreMountains.InventoryEngine
 		/// the reference inventory from which we'll display item details
 		[MMInformation("Specify here the name of the inventory whose content's details you want to display in this Details panel. You can also decide to make it global. If you do so, it'll display the details of all items, regardless of their inventory.",MMInformationAttribute.InformationType.Info,false)]
 		public string TargetInventoryName;
-		public string PlayerID = "Player1";
+		public string PlayerID = "PlayerX00";
 		/// if you make this panel global, it'll ignore 
 		public bool Global = false;
 		/// whether the details are currently hidden or not 
@@ -55,6 +56,11 @@ namespace MoreMountains.InventoryEngine
 
 		protected float _fadeDelay=0.2f;
 		protected CanvasGroup _canvasGroup;
+
+		private void Awake()
+		{
+			PlayerID = PlayerPrefs.GetString("PlayerID");
+		}
 
 		/// <summary>
 		/// On Start, we grab and store the canvas group and determine our current Hidden status
