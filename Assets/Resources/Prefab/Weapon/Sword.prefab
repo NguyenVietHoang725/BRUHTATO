@@ -119,7 +119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   atk: 3
   mpConsume: 0
-  atkSpeed: 0.3
+  atkSpeed: 0.7
   critRate: 0
   rechargable: 0
   multishoot: 0

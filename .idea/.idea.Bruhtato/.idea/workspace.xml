@@ -6,53 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7ed137f6-678d-44bf-baa4-c2db03f637c1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Bow/Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Bow/Attack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Bruhtato/Death.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Bruhtato/Death.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Bruhtato/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Bruhtato/Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Bruhtato/Move.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Bruhtato/Move.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/LongBow/LongBowAttack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/LongBow/LongBowAttack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ShortBow/Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ShortBow/Attack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Sword/Sword.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Sword/Sword.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/InventoryDemoCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/InventoryDemoCharacter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/Core/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/Core/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/Core/InventoryCharacterIdentifier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/Core/InventoryCharacterIdentifier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/GUI/InventoryDetails.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/GUI/InventoryDetails.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/GUI/InventoryDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/InventoryEngine/Scripts/GUI/InventoryDisplay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Bow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Items/Bow.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/PoopsCoin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/PoopsCoin.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/Bow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/Bow.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/FireWand.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/FireWand.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/LongBow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/LongBow.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/M416.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/M416.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/OldBow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/OldBow.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/ShortBow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/ShortBow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/BlankWeapon.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/BlankWeapon.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/Blaze Buckshot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/Blaze Buckshot.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/Sword.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/Sword.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Endless1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Endless1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Event1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Event1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/Stats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/Stats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/Buff/StatsBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/Buff/StatsBuff.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/General/BarsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/General/BarsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/General/EnemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/General/EnemySpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/General/Gate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/General/Gate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/General/MenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/General/MenuManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/SaveLoad/ServerSync.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/SaveLoad/ServerSync.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/Shop/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/Shop/Shop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/Shop/ShopDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/Shop/ShopDisplay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapon/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponDamage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponStats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Character/Bruhtato.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/Character/Bruhtato.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Bars.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Bars.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Character/Bruhtato.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/Character/Bruhtato.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Character/Bruhtato.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/Character/Bruhtato.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Weapon/M416.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/Weapon/M416.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Weapon/bow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/Weapon/bow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Weapon/longbow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/Weapon/longbow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Weapon/shortbow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/Weapon/shortbow.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +26,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/System/Buff/StatsBuff.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/System/Shop/ShopDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/System/Shop/ShopManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/StarterWeapon.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -208,7 +167,8 @@
       <workItem from="1743563584306" duration="3450000" />
       <workItem from="1743613021118" duration="3625000" />
       <workItem from="1743699563901" duration="2563000" />
-      <workItem from="1743872386772" duration="3130000" />
+      <workItem from="1743872386772" duration="5033000" />
+      <workItem from="1743994242695" duration="2464000" />
     </task>
     <servers />
   </component>
