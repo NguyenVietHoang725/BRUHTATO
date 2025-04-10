@@ -298,9 +298,14 @@ MonoBehaviour:
   spd: 0
   shield: 0
   critRate: 1
+  shieldRegenRate: 0
+  shieldRegenDelay: 0
   stats: {fileID: 0}
   buffValue: 0.03
   descriptionText: {fileID: 7644896569041175000}
+  enemySpawner: {fileID: 0}
+  gemsToGive: {fileID: 4802903661538791190, guid: ef5802e41a3ea8a429c9a591d14bc419, type: 3}
+  gemsToGiveAmount: 0
 --- !u!1 &7100537538750053381
 GameObject:
   m_ObjectHideFlags: 0

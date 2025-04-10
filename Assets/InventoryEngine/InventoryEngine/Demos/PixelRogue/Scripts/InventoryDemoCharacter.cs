@@ -43,7 +43,6 @@ namespace MoreMountains.InventoryEngine
 
 		public virtual void UnSetWeapon(InventoryItem item)
 		{
-			if(GameObject.Find("BlankWeapon")) Destroy(GameObject.Find("BlankWeapon").gameObject);
 			if(item.name == WeaponInventory.Content[0].name)
 				Destroy(GameObject.Find(WeaponInventory.Content[0].Prefab.name + "(Clone)"));
 		}

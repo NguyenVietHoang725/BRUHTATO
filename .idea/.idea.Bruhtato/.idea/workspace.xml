@@ -5,10 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ed137f6-678d-44bf-baa4-c2db03f637c1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Gem.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Gem.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/PoopsGem.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/PoopsGem.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Items/PoopsGem.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Items/PoopsGem.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/PoopsGem.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/PoopsGem.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprite/Items/Gem.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprite/Items/Gem.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/TwoHeadedAxe/Rolling.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/TwoHeadedAxe/Rolling.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/TwoHeadedAxe.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Weapon/TwoHeadedAxe.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/InventoryDemoCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/InventoryDemoCharacter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/Items/WeaponItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/Items/WeaponItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Endless1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Endless1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Event1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Event1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/Stats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/Stats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/System/Buff/BuffManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/Buff/BuffManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/System/Buff/StatsBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/Buff/StatsBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/System/General/EnemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/General/EnemySpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/System/General/MenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/General/MenuManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/System/Shop/ShopDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/Shop/ShopDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/BuffPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/BuffPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/CritRateBuff.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/CritRateBuff.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/HPBuff.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/HPBuff.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/MPBuff.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/MPBuff.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/SPDBuff.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/SPDBuff.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/ShieldBuff.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/ShieldBuff.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/ShieldRegenDelay.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/ShieldRegenDelay.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/ShieldRegenRate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/ShieldRegenRate.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,20 +64,20 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CodeLensConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Han&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Unity\Unity Hub\2022.3.37f1\Editor\Unity.exe" />
@@ -168,6 +195,9 @@
       <workItem from="1743872386772" duration="5033000" />
       <workItem from="1743994242695" duration="2464000" />
       <workItem from="1744131867976" duration="972000" />
+      <workItem from="1744216597352" duration="1017000" />
+      <workItem from="1744301807755" duration="1608000" />
+      <workItem from="1744303891704" duration="1651000" />
     </task>
     <servers />
   </component>

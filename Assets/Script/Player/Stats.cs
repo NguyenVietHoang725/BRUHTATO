@@ -25,6 +25,7 @@ public class Stats : MonoBehaviour
         if(shield > maxShield) shield = maxShield;
         if(mp < 0) mp = 0;
         if(shield < 0) shield = 0;
+        if(hp < 0) hp = 0;
     }
     
     public void TakeDamage(int damage)

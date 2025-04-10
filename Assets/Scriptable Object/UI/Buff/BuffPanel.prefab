@@ -103,6 +103,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  gemsToGive: {fileID: 4802903661538791190, guid: ef5802e41a3ea8a429c9a591d14bc419, type: 3}
+  gemsToGiveAmount: 5
+  enemySpawner: {fileID: 0}
+  stats: {fileID: 0}
 --- !u!1001 &650339630978746951
 PrefabInstance:
   m_ObjectHideFlags: 0

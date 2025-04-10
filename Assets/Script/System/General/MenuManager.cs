@@ -40,6 +40,8 @@ public class MenuManager : MonoBehaviour
             PlayerPrefs.DeleteKey("MainInventorySavePlayerX00");
             PlayerPrefs.DeleteKey("WeaponInventorySavePlayerX00");
             PlayerPrefs.DeleteKey("CoinInventorySavePlayerX00");
+            
+            PlayerPrefs.Save();
         }
     }
 }
