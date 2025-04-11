@@ -106,6 +106,7 @@ public class EnemyMovement : MonoBehaviour
             GameObject coinDrop = Instantiate(coin, transform.position + randomOffset, this.transform.rotation);
         }
         GameObject mpOrb = Instantiate(ManaOrb, this.transform.position, this.transform.rotation);
+        canMove = false;
         Destroy(this.gameObject, 0.5f);
     }
 }

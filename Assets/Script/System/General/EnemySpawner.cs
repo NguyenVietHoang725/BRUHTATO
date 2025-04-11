@@ -15,6 +15,12 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         enemyAmount = Random.Range(min, max);
+        if (PlayerPrefs.GetString("PlayerID") != "PlayerX00")
+        {
+            PlayerPrefs.SetInt("WavePassed" + PlayerPrefs.GetString("PlayerID"), PlayerPrefs.GetInt("WavePassedPlayerX00"));
+            PlayerPrefs.DeleteKey("WavePassedPlayerX00");
+            PlayerPrefs.Save();
+        }
     }
 
     // Update is called once per frame
@@ -38,6 +44,8 @@ public class EnemySpawner : MonoBehaviour
 
     public void SetAmount()
     {
+        PlayerPrefs.SetInt("WavePassed" + PlayerPrefs.GetString("PlayerID"), lvl);
+        PlayerPrefs.Save();
         lvl++;
         enemyAmount = Random.Range(min + lvl, max + lvl);
     }

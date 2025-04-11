@@ -19,6 +19,7 @@ public class ShopDisplay : MonoBehaviour
 
     private void Start()
     {
+        NewShopSave();
         LoadPurchasedItems(); // Load trạng thái mua từ PlayerPrefs
         PopulateShopGrid();
         shopManager.buyButton.onClick.AddListener(BuySelectedItem);
@@ -72,7 +73,7 @@ public class ShopDisplay : MonoBehaviour
         {
             shopManager.BuyItem(selectedItem);
             itemButtons[selectedItem].interactable = false; // Vô hiệu hóa slot sau khi mua
-            PlayerPrefs.SetInt("Purchased_" + selectedItem.ItemID, 1); // Lưu trạng thái đã mua
+            PlayerPrefs.SetInt("PurchasedIn" + PlayerPrefs.GetString("PlayerID") + selectedItem.ItemID, 1); // Lưu trạng thái đã mua
             PlayerPrefs.Save();
             selectedItem = null;
         }
@@ -100,6 +101,20 @@ public class ShopDisplay : MonoBehaviour
                     itemButtons[item].interactable = false;
                 }
             }
+        }
+    }
+
+    private void NewShopSave()
+    {
+        foreach (InventoryItem item in shopManager.content)
+        {
+            if (PlayerPrefs.GetString("PlayerID") != "PlayerX00" && item != null &&
+                PlayerPrefs.GetInt("PurchasedInPlayerX00" + item.ItemID, 0) == 1)
+            {
+                PlayerPrefs.SetInt("PurchasedIn" + PlayerPrefs.GetString("PlayerID") + selectedItem.ItemID, 1);
+                PlayerPrefs.DeleteKey("PurchasedInPlayerX00" + selectedItem.ItemID);
+            }
+            PlayerPrefs.Save();
         }
     }
 }
