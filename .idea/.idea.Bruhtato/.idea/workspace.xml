@@ -5,37 +5,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ed137f6-678d-44bf-baa4-c2db03f637c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/Gem.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/Gem.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/PoopsGem.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/PoopsGem.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Items/PoopsGem.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Items/PoopsGem.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/PoopsGem.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/PoopsGem.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprite/Items/Gem.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprite/Items/Gem.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bruhtato/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/InventoryDemoCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/InventoryDemoCharacter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/Items/WeaponItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryEngine/InventoryEngine/Demos/PixelRogue/Scripts/Items/WeaponItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Endless1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Endless1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Event1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Event1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/Stats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/Stats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/Buff/BuffManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/Buff/BuffManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/Buff/StatsBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/Buff/StatsBuff.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/General/EnemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/General/EnemySpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/General/MenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/General/MenuManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/System/Shop/ShopDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/System/Shop/ShopDisplay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/BuffPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/BuffPanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/CritRateBuff.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/CritRateBuff.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/HPBuff.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/HPBuff.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/MPBuff.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/MPBuff.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/SPDBuff.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/SPDBuff.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/ShieldBuff.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/ShieldBuff.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/ShieldRegenDelay.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/ShieldRegenDelay.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/ShieldRegenRate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/ShieldRegenRate.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Bullet.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Bullet/Arrow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Bullet/Arrow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Bullet/BlazeBullet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Bullet/BlazeBullet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Bullet/Bullet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Bullet/Bullet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Bullet/FireBall.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Bullet/FireBall.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Character.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Character/Bruhtato.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Character/Bruhtato.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Character/Karotto.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Character/Karotto.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/Dummy.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/Dummy.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/EnemySpawner.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/EnemySpawner.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/Orc.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/Enemy/Orc.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/NPC.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/NPC/Gate.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/NPC/Gate.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/NPC/GetSword.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/NPC/GetSword.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/NPC/Shop.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/NPC/Shop.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Bars.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Bars.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/BlankBuff.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/BlankBuff.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/BuffPanel.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/BuffPanel.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/CritRateBuff.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/CritRateBuff.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/HPBuff.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/HPBuff.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/MPBuff.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/MPBuff.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/SPDBuff.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/SPDBuff.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/ShieldBuff.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/ShieldBuff.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/ShieldRegenDelay.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/ShieldRegenDelay.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/ShieldRegenRate.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Buff/ShieldRegenRate.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/ItemDescription.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/ItemDescription.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Main Camera.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/Main Camera.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/ShopItemSlot.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/ShopItemSlot.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/ShopPanel.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Object/UI/ShopPanel.prefab.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +81,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/System/Buff/StatsBuff.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/System/Shop/ShopDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/System/Shop/ShopManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/System/Shop/TradeGemCoin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/StarterWeapon.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -197,7 +228,8 @@
       <workItem from="1744131867976" duration="972000" />
       <workItem from="1744216597352" duration="1017000" />
       <workItem from="1744301807755" duration="1608000" />
-      <workItem from="1744303891704" duration="1651000" />
+      <workItem from="1744303891704" duration="2171000" />
+      <workItem from="1744373490567" duration="3401000" />
     </task>
     <servers />
   </component>
